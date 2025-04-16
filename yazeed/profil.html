@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Profile</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      background-color: #f1f2f6;
+    }
+
+    .sidebar {
+      width: 200px;
+      background: #2e2e2e;
+      color: white;
+      min-height: 100vh;
+      padding: 20px 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    .user-info-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .initials {
+      width: 35px;
+      height: 35px;
+      background-color: #CDCDCD;
+      color: #1F1F1F;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      flex-shrink: 0;
+    }
+
+    .user_name {
+      font-size: 14px;
+      font-weight: 500;
+      color: white;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .nav-btn {
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      text-align: left;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.2s ease;
+    }
+
+    .nav-btn:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-btn .new {
+      background: red;
+      color: white;
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 10px;
+      float: right;
+    }
+
+    .main-content {
+      margin-left: 200px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      position: fixed;
+      left: 200px;
+      right: 0;
+      top: 0;
+      height: 60px;
+      background-color: #fff;
+      padding: 0 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+      z-index: 999;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-area img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .main {
+      flex: 1;
+      padding: 90px 30px 30px;
+    }
+
+    .profile-header {
+      background-color: #e6e6eb;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 60px;
+      height: 60px;
+      background-color: #ccc;
+      border-radius: 50%;
+      line-height: 60px;
+      font-weight: bold;
+      font-size: 20px;
+      margin: auto;
+    }
+
+    .profile-info {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .info-card {
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+    .info-card h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .info-card p {
+      color: #888;
+    }
+
+    .footer {
+      background-color: white;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="user-info-row">
+      <div class="initials">SN</div>
+      <span class="user_name">Student Name</span>
+    </div>
+    <hr>
+    <div class="nav">
+      <button class="nav-btn">Dashboard <span class="new">New</span></button>
+      <button class="nav-btn">Grades</button>
+      <button class="nav-btn">Subject</button>
+      <button class="nav-btn">Attendance <span class="new">New</span></button>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="topbar">
+      <span>Contact</span>
+      <div class="logo-area">
+        <img src="./pic/logo3.jpeg" alt="Logo" />
+        <h1>MADRASATI</h1>
+      </div>
+    </div>
+
+    <div class="main">
+      <h2>Profile</h2>
+
+      <div class="profile-header">
+        <div class="avatar">SN</div>
+        <div class="profile-info">
+          <strong>Student Name</strong><br />
+          <small>student</small>
+        </div>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>National ID</h3>
+          <p>value</p>
+        </div>
+        <div class="info-card">
+          <h3>Date of Birth</h3>
+          <p>value</p>
+        </div>
+        <div class="info-card">
+          <h3>Gender</h3>
+          <p>value</p>
+        </div>
+        <div class="info-card">
+          <h3>Address</h3>
+          <p>value</p>
+        </div>
+        <div class="info-card">
+          <h3>Current Grade</h3>
+          <p>value</p>
+        </div>
+        <div class="info-card">
+          <h3>Parent Name</h3>
+          <p>value</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      Copyright © 2025–present MADRASATI. All rights reserved.
+    </div>
+  </div>
+
+</body>
+</html>

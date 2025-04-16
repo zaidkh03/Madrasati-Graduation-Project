@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  background-color: #1e1e1e;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #2f3542;
+  color: white;
+  padding-top: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.menu-item, .menu-item1 {
+  width: 100%;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background-color: #57606f;
+}
+
+.menu-item .new {
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+.main-content {
+  margin-left: 200px;
+  flex: 1;
+  background-color: #f1f2f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.topbar {
+  position: fixed;
+  left: 200px;
+  right: 0;
+  top: 0;
+  height: 60px;
+  background-color: #fff;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  z-index: 999;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-area img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.main {
+  flex: 1;
+  padding: 90px 30px 30px; /* Space for fixed topbar */
+}
+
+.profile-header {
+  background-color: #e6e6eb;
+  padding: 30px;
+  text-align: center;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  background-color: #ccc;
+  border-radius: 50%;
+  line-height: 60px;
+  font-weight: bold;
+  font-size: 20px;
+  margin: auto;
+}
+
+.profile-info {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+
+.info-card {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.info-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.info-card p {
+  color: #888;
+}
+
+.footer {
+  background-color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin-top: auto;
+}

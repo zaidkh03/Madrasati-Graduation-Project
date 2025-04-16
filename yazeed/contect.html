@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Contact</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      display: flex;
+      background-color: #f1f2f6;
+    }
+
+    .sidebar {
+      width: 200px;
+      background: #2e2e2e;
+      color: white;
+      min-height: 100vh;
+      padding: 20px 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    .user-info-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .initials {
+      width: 35px;
+      height: 35px;
+      background-color: #CDCDCD;
+      color: #1F1F1F;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      flex-shrink: 0;
+    }
+
+    .user-name {
+      font-size: 14px;
+      font-weight: 500;
+      color: white;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .nav-btn {
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      text-align: left;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.2s ease;
+    }
+
+    .nav-btn:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-btn:focus {
+      outline: none;
+    }
+
+    .nav-btn .new {
+      background: red;
+      color: white;
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 10px;
+      float: right;
+    }
+
+    .topbar {
+      position: fixed;
+      left: 200px;
+      right: 0;
+      top: 0;
+      height: 60px;
+      background-color: #fff;
+      padding: 0 30px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+      z-index: 999;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-area img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .main-content {
+      margin-left: 200px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .contact-section {
+      margin-top: 80px;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .contact-cards {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 250px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
+    .card table {
+      width: 100%;
+      text-align: left;
+    }
+
+    .card table td {
+      padding: 6px;
+      font-size: 14px;
+    }
+
+    .card img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .footer {
+      background-color: white;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="user-info-row">
+      <div class="initials">SA</div>
+      <span class="user-name">Student Name</span>
+    </div>
+    <hr>
+
+    <div class="nav">
+      <button class="nav-btn">Dashboard <span class="new">New</span></button>
+      <button class="nav-btn">Grades</button>
+      <button class="nav-btn">Subject</button>
+      <button class="nav-btn">Attendance <span class="new">New</span></button>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="topbar">
+      <span>Contact</span>
+      <div class="logo-area">
+        <img src="./pic/logo3.jpeg" alt="Logo">
+        <h1>MADRASATI</h1>
+      </div>
+    </div>
+
+    <div class="contact-section">
+      <h2>Contact</h2>
+      <div class="contact-cards">
+        <div class="card">
+          <img src="https://img.icons8.com/ios/50/teacher.png" alt="Teacher Icon">
+          <h3>Teacher</h3>
+          <table>
+            <tr><td><strong>Phone</strong></td><td><a href="tel:0799999999">0799999999</a></td></tr>
+            <tr><td><strong>Email</strong></td><td><a href="mailto:Email@domain.com">Email@domain.com</a></td></tr>
+          </table>
+        </div>
+
+        <div class="card">
+          <img src="https://img.icons8.com/ios/50/school.png" alt="School Icon">
+          <h3>School</h3>
+          <table>
+            <tr><td><strong>Phone</strong></td><td><a href="tel:0799999999">0799999999</a></td></tr>
+            <tr><td><strong>Email</strong></td><td><a href="mailto:Email@domain.com">Email@domain.com</a></td></tr>
+            <tr><td><strong>URL</strong></td><td><a href="https://www.madrasati.com">www.madrasati.com</a></td></tr>
+            <tr><td><strong>Location</strong></td><td><a href="#">School Location click to see direction</a></td></tr>
+          </table>
+        </div>
+
+        <div class="card">
+          <img src="https://img.icons8.com/ios/50/administrator-male.png" alt="Admin Icon">
+          <h3>Admin</h3>
+          <table>
+            <tr><td><strong>Phone</strong></td><td><a href="tel:0799999999">0799999999</a></td></tr>
+            <tr><td><strong>Email</strong></td><td><a href="mailto:Email@domain.com">Email@domain.com</a></td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      Copyright © 2025–present MADRASATI. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
