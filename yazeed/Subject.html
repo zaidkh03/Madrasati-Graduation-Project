@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Madrasati - Subjects</title>
+  <link rel="stylesheet" href="Subject.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="avatar">SN</div>
+        <div class="name">Student Name</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">📊 Dashboard <span class="new">New</span></a></li>
+          <li><a href="#">📈 Grades</a></li>
+          <li><a href="#">📚 Subject</a></li>
+          <li><a href="#">📝 Attendance <span class="new">New</span></a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <header class="header">
+        <div class="menu">☰ Contact</div>
+        <h1>MADRASATI</h1>
+      </header>
+      <section class="subjects">
+        <h2>Subjects</h2>
+        <div class="subjects-grid">
+          <div class="card">Arabic</div>
+          <div class="card">English</div>
+          <div class="card">Math</div>
+          <div class="card">Science</div>
+          <div class="card">History</div>
+          <div class="card">Computer</div>
+          <div class="card">Art</div>
+          <div class="card">Sport</div>
+        </div>
+      </section>
+      <footer class="footer">
+        &copy; 2025-present <strong>MADRASATI</strong>. All rights reserved.
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('click', () => {
+        alert(`You clicked on ${card.textContent} 🚀`);
+      });
+    });
+  </script>
+</body>
+</html>
