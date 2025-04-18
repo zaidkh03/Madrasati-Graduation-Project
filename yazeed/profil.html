@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Student Profile</title>
-  <link rel="stylesheet" href="profil.css">
+  <link rel="stylesheet" href="profil.css" />
 </head>
 <body>
 
@@ -14,27 +14,38 @@
       <span class="user_name">Student Name</span>
     </div>
     <hr>
+    
     <div class="nav">
-      <button class="nav-btn">Dashboard <span class="new">New</span></button>
-      <button class="nav-btn">Grades</button>
-      <button class="nav-btn">Subject</button>
-      <button class="nav-btn">Attendance <span class="new">New</span></button>
+      <button class="nav-btn">📊 Dashboard <span class="new">New</span></button>
+      <button class="nav-btn">📈 Grades</button>
+      <button class="nav-btn">📚 Subject</button>
+      <button class="nav-btn">📝 Attendance <span class="new">New</span></button>
     </div>
   </div>
 
   <div class="main-content">
     <div class="topbar">
-      <span>Contact</span>
+      <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+      <span>📧 Contact</span>
+<button class="close-sidebar" onclick="toggleSidebar()">✖</button>
       <div class="logo-area">
-        <img src="/project/pic/logo3.jpeg" alt="Logo" />
-        <h1>MADRASATI</h1>
+        <img src="/pic/logo3.jpeg" alt="Logo" />
+        <h1 style="color:#000000;">MADRASATI</h1>
       </div>
     </div>
 
     <div class="main">
-      <h2>Profile</h2>
+      <h2>👤 Profile</h2>
 
-      <div class="profile-header">
+      <!-- Buttons -->
+      <div class="upload-section">
+        <label for="bg-upload" class="upload-btn">📸 اختر خلفية</label>
+        <input type="file" id="bg-upload" accept="image/*" hidden />
+        <button id="remove-bg-btn" class="remove-btn">🧹 إزالة الخلفية</button>
+      </div>
+
+      <!-- Profile Section -->
+      <div class="profile-header" id="profile-header">
         <div class="avatar">SN</div>
         <div class="profile-info">
           <strong>Student Name</strong><br />
@@ -43,38 +54,53 @@
       </div>
 
       <div class="info-grid">
-        <div class="info-card">
-          <h3>National ID</h3>
-          <p>value</p>
-        </div>
-        <div class="info-card">
-          <h3>Date of Birth</h3>
-          <p>value</p>
-        </div>
-        <div class="info-card">
-          <h3>Gender</h3>
-          <p>value</p>
-        </div>
-        <div class="info-card">
-          <h3>Address</h3>
-          <p>value</p>
-        </div>
-        <div class="info-card">
-          <h3>Current Grade</h3>
-          <p>value</p>
-        </div>
-        <div class="info-card">
-          <h3>Parent Name</h3>
-          <p>value</p>
-        </div>
+        <div class="info-card"><h3>🆔 National ID</h3><p>value</p></div>
+        <div class="info-card"><h3>🎂 Date of Birth</h3><p>value</p></div>
+        <div class="info-card"><h3>⚧ Gender</h3><p>value</p></div>
+        <div class="info-card"><h3>🏠 Address</h3><p>value</p></div>
+        <div class="info-card"><h3>🏫 Current Grade</h3><p>value</p></div>
+        <div class="info-card"><h3>👨‍👩‍👧 Parent Name</h3><p>value</p></div>
       </div>
     </div>
 
     <div class="footer">
-      Copyright © 2025–present MADRASATI. All rights reserved.
+      © 2025–present <strong> MADRASATI</strong>. All rights reserved.
     </div>
   </div>
-  <
+
+  <!-- JavaScript -->
+  <script>
+    const fileInput = document.getElementById('bg-upload');
+    const profileHeader = document.getElementById('profile-header');
+    const removeBtn = document.getElementById('remove-bg-btn');
+
+    fileInput.addEventListener('change', function () {
+      const file = this.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          profileHeader.style.backgroundImage = `url('${e.target.result}')`;
+          profileHeader.style.backgroundSize = 'cover';
+          profileHeader.style.backgroundPosition = 'center';
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+
+    removeBtn.addEventListener('click', function () {
+      profileHeader.style.backgroundImage = '';
+      profileHeader.style.backgroundColor = '#e9ecef'; // default color
+    });
+    function toggleSidebar() {
+  document.querySelector('.sidebar').classList.toggle('active');
+}
+
+  function toggleSidebar() {
+    document.querySelector('.sidebar').classList.toggle('active');
+  }
+
+
+  </script>
 
 </body>
 </html>

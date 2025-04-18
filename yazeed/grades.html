@@ -7,71 +7,72 @@
   <link rel="stylesheet" href="grades.css">
 </head>
 <body>
-  <div class="sidebar">
-    <div class="user-info-row">
-      <div class="initials">SA</div>
-      <span class="user_name">Student Name</span>
-    </div>
-    <hr>
-    <div class="nav">
-      <button class="nav-btn">Dashboard</button>
-      <button class="nav-btn">Grades</button>
-      <button class="nav-btn">Subject</button>
-      <button class="nav-btn">Attendance</button>
-    </div>
-  </div>
-
-  <div class="topbar">
-    <span>Contact</span>
-    <div class="logo-area">
-      <img src="/project/pic/logo3.jpeg" alt="Logo">
-      <h1>MADRASATI</h1>
-    </div>
-  </div>
-
-  <div class="main-content">
-    <div class="grades-section">
-      <h2>Grades</h2>
-      <div class="filters">
-        <div>
-          <label for="year">Select the year</label><br>
-          <select id="year">
-            <option>Select</option>
-          </select>
-        </div>
-        <div>
-          <label for="semester">Select the Semester</label><br>
-          <select id="semester">
-            <option>Select</option>
-          </select>
-        </div>
+  <div class="container">
+    <div class="sidebar">
+      <div class="user-info-row">
+        <div class="initials">SN</div>
+        <span class="user_name">Student Name</span>
       </div>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Subject</th>
-            <th>First Mark</th>
-            <th>Second Mark</th>
-            <th>Participation Mark</th>
-            <th>Final Mark</th>
-            <th>Total</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Math</td><td>15</td><td>18</td><td>5</td><td>32</td><td>70</td></tr>
-          <tr><td>Science</td><td>16</td><td>17</td><td>6</td><td>31</td><td>70</td></tr>
-          <tr><td>English</td><td>14</td><td>19</td><td>4</td><td>30</td><td>67</td></tr>
-          <tr><td>History</td><td>13</td><td>15</td><td>5</td><td>29</td><td>62</td></tr>
-          <tr><td>Geography</td><td>15</td><td>16</td><td>6</td><td>28</td><td>65</td></tr>
-          <tr><td>Arabic</td><td>17</td><td>18</td><td>5</td><td>30</td><td>70</td></tr>
-        </tbody>
-      </table>
+      <hr>
+      <div class="nav">
+        <button class="nav-btn">📊 Dashboard <span class="new">New</span></button>
+        <button class="nav-btn">📈 Grades</button>
+        <button class="nav-btn">📚 Subject</button>
+        <button class="nav-btn">📝 Attendance <span class="new">New</span></button>
+      </div>
     </div>
 
-    <div class="footer">
-      Copyright © 2025–present MADRASATI. All rights reserved.
-    </div>
+    <main class="content">
+      <header class="header">
+        <div class="menu">Contact</div>
+        <h1>MADRASATI</h1>
+      </header>
+
+      <section class="grades-section">
+        <h2>📈 Grades</h2>
+        <div class="filters">
+          <div>
+            <label for="year">Select the year</label><br>
+            <select id="year">
+              <option>Select</option>
+            </select>
+          </div>
+          <div>
+            <label for="semester">Select the Semester</label><br>
+            <select id="semester">
+              <option>Select</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Subject</th>
+                <th>First Mark</th>
+                <th>Second Mark</th>
+                <th>Participation</th>
+                <th>Final Mark</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Math</td><td>15</td><td>18</td><td>5</td><td>32</td><td>70</td></tr>
+              <tr><td>Science</td><td>16</td><td>17</td><td>6</td><td>31</td><td>70</td></tr>
+              <tr><td>English</td><td>14</td><td>19</td><td>4</td><td>30</td><td>67</td></tr>
+              <tr><td>History</td><td>13</td><td>15</td><td>5</td><td>29</td><td>62</td></tr>
+              <tr><td>Geography</td><td>15</td><td>16</td><td>6</td><td>28</td><td>65</td></tr>
+              <tr><td>Arabic</td><td>17</td><td>18</td><td>5</td><td>30</td><td>70</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <footer class="footer">
+        &copy; 2025–present <strong>MADRASATI</strong>. All rights reserved.
+      </footer>
+    </main>
   </div>
 </body>
 </html>

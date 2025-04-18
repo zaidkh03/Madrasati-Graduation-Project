@@ -1,175 +1,213 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
 
-  body {
-    display: flex;
-    background-color: #1e1e1e;
-  }
+body {
+  display: flex;
+  background-color: #f5f8fa;
+}
 
-  /* Sidebar Style */
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background: #2e2e2e;
+  color: white;
+  min-height: 100vh;
+  padding: 20px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.user-info-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.initials {
+  width: 35px;
+  height: 35px;
+  background-color: #CDCDCD;
+  color: #1F1F1F;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.user_name {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.nav-btn {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffd369;
+  transform: translateX(4px);
+}
+
+.nav-btn .new {
+  background: red;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: auto;
+}
+
+
+.topbar {
+  position: fixed;
+  left: 200px;
+  right: 0;
+  top: 0;
+  height: 60px;
+  background-color: #ffffff;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  z-index: 1000;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-area img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.main-content {
+  margin-left: 200px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #eef1f7;
+}
+
+.grades-section {
+  padding: 100px 30px 30px;
+}
+
+.grades-section h2 {
+  margin-bottom: 30px;
+  color: #2d3e50;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.filters div {
+  text-align: center;
+}
+
+.filters label {
+  font-weight: bold;
+  color: #333;
+}
+
+.filters select {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+th {
+  background-color: #3e5c76;
+  color: white;
+  padding: 12px;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  margin-top: auto;
+  border-top: 1px solid #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
   .sidebar {
-    width: 200px;
-    background: #2e2e2e;
-    color: white;
-    min-height: 100vh;
-    padding: 20px 10px;
-    position: fixed;
-    top: 0;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1001;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .topbar {
     left: 0;
   }
-
-  .user-info-row {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-  }
-
-  .initials {
-    width: 35px;
-    height: 35px;
-    background-color: #CDCDCD;
-    color: #1F1F1F;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    flex-shrink: 0;
-  }
-
-  .user-name {
-    font-size: 14px;
-    font-weight: 500;
-    color: white;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .nav {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .nav-btn {
-    background-color: transparent;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    text-align: left;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.2s ease;
-  }
-
-  .nav-btn:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-
-  .nav-btn:focus {
-    outline: none;
-  }
-
-  .nav-btn .new {
-    background: red;
-    color: white;
-    font-size: 10px;
-    padding: 2px 6px;
-    border-radius: 10px;
-    float: right;
-  }
-
-  /* Topbar Style */
-  .topbar {
-    position: fixed;
-    left: 200px;
-    right: 0;
-    top: 0;
-    height: 60px;
-    background-color: #fff;
-    padding: 0 30px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    z-index: 999;
-  }
-
-  .logo-area {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .logo-area img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-  }
-
-  /* Main Content */
-  .main-content {
-    flex: 1;
-    background-color: #edeef0;
-    margin-left: 200px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
-  .grades-section {
-    padding: 100px 30px 30px; /* space for fixed topbar */
-  }
-
-  .grades-section h2 {
-    margin-bottom: 30px;
-  }
-
-  .filters {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 30px;
-  }
-
-  .filters div {
-    text-align: center;
-  }
-
-  .filters select {
-    padding: 8px 12px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    margin-top: 5px;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: white;
-  }
-
-  th, td {
-    padding: 12px;
-    border: 1px solid #ccc;
-    text-align: center;
-  }
-
-  .footer {
-    background-color: white;
-    padding: 10px 20px;
-    text-align: center;
-    font-size: 12px;
-    color: #666;
-    margin-top: auto;
-  }
+}

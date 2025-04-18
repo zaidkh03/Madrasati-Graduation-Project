@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Student Grades</title>
-  <link rel="stylesheet" href="grades2.css">
+  <link rel="stylesheet" href="grades2.css" />
 </head>
 <body>
+
   <div class="sidebar">
     <div class="user-info-row">
       <div class="initials">SA</div>
       <span class="user-name">Student Name</span>
     </div>
-    <hr>
-
+    <hr />
     <div class="nav">
-      <button class="nav-btn" onclick="handleClick('Dashboard')">Dashboard <span class="new">New</span></button>
-      <button class="nav-btn" onclick="handleClick('Grades')">Grades</button>
-      <button class="nav-btn" onclick="handleClick('Subject')">Subject</button>
-      <button class="nav-btn" onclick="handleClick('Attendance')">Attendance <span class="new">New</span></button>
+      <button class="nav-btn">📊 Dashboard <span class="new">New</span></button>
+      <button class="nav-btn">📈 Grades</button>
+      <button class="nav-btn">📚 Subject</button>
+      <button class="nav-btn">📝 Attendance <span class="new">New</span></button>
     </div>
   </div>
 
@@ -26,23 +26,23 @@
     <div class="topbar">
       <span>Contact</span>
       <div class="logo-area">
-        <img src="/project/pic/logo3.jpeg" alt="Logo">
+        <img src="/pic/logo3.jpeg" alt="Logo" />
         <h1>MADRASATI</h1>
       </div>
     </div>
 
     <div class="grades-section">
-      <h2>Grades</h2>
+      <h2>📈 Grades Overview</h2>
 
       <div class="filters">
         <div>
-          <label for="year">Select the year</label><br>
+          <label for="year">Select the year</label><br />
           <select id="year">
             <option>Select</option>
           </select>
         </div>
         <div>
-          <label for="semester">Select the Semester</label><br>
+          <label for="semester">Select the Semester</label><br />
           <select id="semester">
             <option>Select</option>
           </select>
@@ -60,15 +60,17 @@
         </thead>
         <tbody>
           <tr>
-            <td>Arabic</td><td>80 / 100</td><td>90 / 100</td><td>85 / 100</td>
+            <td>Arabic</td>
+            <td>80 / 100</td>
+            <td>90 / 100</td>
+            <td>85 / 100</td>
           </tr>
           <tr><td colspan="4">&nbsp;</td></tr>
-          <tr><td colspan="4">&nbsp;</td></tr>
-          <tr><td colspan="4">&nbsp;</td></tr>
-          <tr><td colspan="4">&nbsp;</td></tr>
-          <tr><td colspan="4">&nbsp;</td></tr>
           <tr>
-            <td><strong>Total</strong></td><td></td><td></td><td></td>
+            <td><strong>Total</strong></td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
         </tbody>
       </table>
@@ -79,10 +81,5 @@
     </div>
   </div>
 
-  <script>
-    function handleClick(menuName) {
-      alert('You clicked on ' + menuName);
-    }
-  </script>
 </body>
 </html>

@@ -3,48 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Subject</title>
-  <link rel="stylesheet" href="Subject2.css">
+  <title>Subject - MADRASATI</title>
+  <link rel="stylesheet" href="Subject.css">
 </head>
 <body>
-  <div class="container">
-    <aside class="sidebar">
-      <div class="profile">
-        <div class="avatar">SN</div>
-        <div class="name">Student Name</div>
-      </div>
-      <ul>
-        <li><a href="#">📊 Dashboard <span class="new">New</span></a></li>
-        <li><a href="#">📈 Grades</a></li>
-        <li><a href="#">📚 Subject</a></li>
-        <li><a href="#">📝 Attendance <span class="new">New</span></a></li>
-      </ul>
-    </aside>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="user-info-row">
+      <div class="initials">SN</div>
+      <span class="user_name">Student Name</span>
+    </div>
+    <hr>
+    <div class="nav">
+      <button class="nav-btn">📊 Dashboard <span class="new">New</span></button>
+      <button class="nav-btn">📈 Grades</button>
+      <button class="nav-btn">📚 Subject</button>
+      <button class="nav-btn">📝 Attendance <span class="new">New</span></button>
+    </div>
+  </div>
 
-    <main class="content">
-      <header class="header">
-        <div class="menu">☰ Contact</div>
+  <!-- Wrapper -->
+  <div class="wrapper">
+    <!-- Topbar -->
+    <div class="topbar">
+      <span>Contact</span>
+      <div class="logo-area">
+        <img src="/pic/logo3.jpeg" alt="Logo" />
         <h1>MADRASATI</h1>
-      </header>
+      </div>
+    </div>
 
-      <section class="subject-card">
-        <div class="subject-info card">
-          <h2>📘 Subject</h2>
-          <p><strong>Book Name:</strong> book-name-1st-edition</p>
+    <!-- Main Content -->
+    <div class="main-content">
+      <h2>📚 Subject</h2>
+      <div class="subject-card">
+        <div class="card subject-info">
+          <h3>📘 Book Name:</h3>
+          <p>book-name-1st-edition</p>
         </div>
-
-        <div class="description card">
+        <div class="card description">
           <h3>Description:</h3>
-          <p>
-            This is a detailed description of the subject. You can write information about the curriculum, key topics, and the learning objectives here. All subjects are structured for maximum learning and understanding.
-          </p>
+          <p>This is a detailed description of the subject. You can write information about the curriculum, key topics, and the learning objectives here. All subjects are structured for maximum learning and understanding.</p>
         </div>
-      </section>
+      </div>
+    </div>
 
-      <footer class="footer">
-        &copy; 2025-present <strong>MADRASATI</strong>. All rights reserved.
-      </footer>
-    </main>
+    <!-- Footer -->
+    <div class="footer">
+      &copy; 2025–present <strong>MADRASATI</strong>. All rights reserved.
+    </div>
   </div>
 </body>
 </html>
