@@ -1,13 +1,18 @@
+/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
 }
 
 body {
   display: flex;
-  background-color: #f5f8fa;
+  background-color: #f1f2f6;
 }
 
 /* Sidebar */
@@ -61,8 +66,10 @@ body {
 }
 
 .nav-btn {
-  background-color: transparent;
-  color: #fff;
+  display: block;
+  background: none;
+  color: white;
+  text-decoration: none;
   border: none;
   padding: 10px;
   text-align: left;
@@ -70,16 +77,15 @@ body {
   cursor: pointer;
   border-radius: 5px;
   transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
 .nav-btn:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #ffd369;
-  transform: translateX(4px);
+  background-color: #1abc9c;
+  transform: translateX(5px);
+  color: #fff;
 }
+
+
 
 .nav-btn .new {
   background: red;
@@ -276,4 +282,28 @@ body {
   .sidebar.active .close-sidebar {
     display: block;
   }
+}
+.topbar-link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.topbar-link:hover {
+  color: #1abc9c;
+}
+.user_name {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.user_name:hover {
+  color: #1abc9c;
 }

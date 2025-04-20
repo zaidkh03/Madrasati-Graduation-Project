@@ -8,25 +8,24 @@
 </head>
 <body>
 
-  <div class="sidebar">
-    <div class="user-info-row">
-      <div class="initials">SN</div>
-      <span class="user_name">Student Name</span>
-    </div>
-    <hr>
-    
-    <div class="nav">
-      <button class="nav-btn">📊 Dashboard <span class="new">New</span></button>
-      <button class="nav-btn">📈 Grades</button>
-      <button class="nav-btn">📚 Subject</button>
-      <button class="nav-btn">📝 Attendance <span class="new">New</span></button>
-    </div>
+<div class="sidebar">
+  <div class="user-info-row">
+    <div class="initials">SN</div>
+    <a href="profil.html" class="user_name">Student Name</a>
   </div>
+  <hr>
+  <div class="nav">
+    <a href="dashboard_page.html" class="nav-btn">📊 Dashboard <span class="new">New</span></a>
+    <a href="grades.html" class="nav-btn">📈 Grades</a>
+    <a href="Subject.html" class="nav-btn">📚 Subject</a>
+    <a href="attendance.html" class="nav-btn">📝 Attendance <span class="new">New</span></a>
+  </div>
+</div>
 
   <div class="main-content">
     <div class="topbar">
       <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
-      <span>📧 Contact</span>
+      <a href="contect.html" class="topbar-link">Contact</a>
 <button class="close-sidebar" onclick="toggleSidebar()">✖</button>
       <div class="logo-area">
         <img src="/pic/logo3.jpeg" alt="Logo" />
@@ -39,9 +38,9 @@
 
       <!-- Buttons -->
       <div class="upload-section">
-        <label for="bg-upload" class="upload-btn">📸 اختر خلفية</label>
+        <label for="bg-upload" class="upload-btn">Choose cover photo </label>
         <input type="file" id="bg-upload" accept="image/*" hidden />
-        <button id="remove-bg-btn" class="remove-btn">🧹 إزالة الخلفية</button>
+        <button id="remove-bg-btn" class="remove-btn"> Delete cover photo</button>
       </div>
 
       <!-- Profile Section -->
@@ -68,12 +67,11 @@
     </div>
   </div>
 
-  <!-- JavaScript -->
   <script>
     const fileInput = document.getElementById('bg-upload');
     const profileHeader = document.getElementById('profile-header');
     const removeBtn = document.getElementById('remove-bg-btn');
-
+  
     fileInput.addEventListener('change', function () {
       const file = this.files[0];
       if (file) {
@@ -86,21 +84,17 @@
         reader.readAsDataURL(file);
       }
     });
-
+  
     removeBtn.addEventListener('click', function () {
       profileHeader.style.backgroundImage = '';
-      profileHeader.style.backgroundColor = '#e9ecef'; // default color
+      profileHeader.style.backgroundColor = '#e9ecef';
     });
+  
     function toggleSidebar() {
-  document.querySelector('.sidebar').classList.toggle('active');
-}
-
-  function toggleSidebar() {
-    document.querySelector('.sidebar').classList.toggle('active');
-  }
-
-
+      document.querySelector('.sidebar').classList.toggle('active');
+    }
   </script>
+  
 
 </body>
 </html>
