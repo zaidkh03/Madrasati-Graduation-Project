@@ -1,210 +1,101 @@
-/* Reset and Base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-html, body {
-  height: 100%;
-  background-color: #f0f4ff;
-}
-
-body {
-  display: flex;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  width: 100%;
-}
-
-/* Sidebar */
-.sidebar {
-  width: 200px;
-  background: #2e2e2e;
-  color: white;
-  min-height: 100vh;
-  padding: 20px 10px;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-.user-info-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
-}
-
-.initials {
-  width: 35px;
-  height: 35px;
-  background-color: #CDCDCD;
-  color: #1F1F1F;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  flex-shrink: 0;
-}
-
-.user_name {
-  font-size: 14px;
-  font-weight: 500;
-  color: white;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.user_name:hover {
-  color: #1abc9c; 
-}
-
-
-.nav {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.nav-btn {
-  display: block;
-  background: none;
-  color: white;
-  text-decoration: none;
-  border: none;
-  padding: 10px;
-  text-align: left;
-  font-size: 14px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-.nav-btn:hover {
-  background-color: #1abc9c;
-  transform: translateX(5px);
-  color: #fff;
-}
-
-
-.nav-btn .new {
-  background: red;
-  color: white;
-  font-size: 10px;
-  padding: 2px 6px;
-  border-radius: 10px;
-  margin-left: auto;
-}
-
-/* Topbar */
-.topbar {
-  position: fixed;
-  left: 200px;
-  right: 0;
-  top: 0;
-  height: 60px;
-  background-color: #fff;
-  padding: 0 30px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #ccc;
-  z-index: 999;
-}
-
-.logo-area {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo-area img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
-
-/* Main Content */
+/* Main Content Styling */
 .main-content {
   flex: 1;
-  padding: 20px;
-  margin-left: 200px;
-  margin-top: 60px;
+  padding: 30px 40px;
+  margin-left: 200px; /* تبعد عن السايد بار */
+  margin-top: 0px;
+  background: linear-gradient(to bottom right, #f0f4ff, #e0e7ff);
+  min-height: calc(100vh - 60px - 40px); /* topbar + footer */
+  border-top-left-radius: 20px;
+  transition: background 0.3s ease;
 }
 
+/* Title Styling */
 .main-content h2 {
-  margin-bottom: 20px;
-  color: #333;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px #dbeafe;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-/* Subject Cards */
+.main-content h2::before {
+  font-size: 1.5rem;
+}
+
+/* Subjects Grid Styling */
 .subjects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 24px;
+  padding: 10px;
 }
 
+/* Card Styling with Hover Effects */
 .card {
-  background-color: #54a0ff;
-  color: white;
-  padding: 30px 20px;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  color: #1f1f1f;
+  padding: 25px 20px;
   text-align: center;
-  font-weight: bold;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-weight: 600;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .card:hover {
-  transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-/* Color per subject */
-.card:nth-child(1) { background-color: #ff6b6b; }
-.card:nth-child(2) { background-color: #1dd1a1; }
-.card:nth-child(3) { background-color: #54a0ff; }
-.card:nth-child(4) { background-color: #feca57; }
-.card:nth-child(5) { background-color: #5f27cd; }
-.card:nth-child(6) { background-color: #576574; }
-.card:nth-child(7) { background-color: #ff9f43; }
-.card:nth-child(8) { background-color: #10ac84; }
-
-/* Footer */
-.footer {
-  font-size: 12px;
-  color: #777;
-  text-align: center;
-  padding: 10px;
-  border-top: 1px solid #ccc;
-  background-color: white;
-  margin-left: 200px;
-}
-strong {
-  color: #000;
-}
-.topbar-link {
-  text-decoration: none;
-  color: #000;
-  font-weight: 500;
-  transition: color 0.3s;
+/* Emoji Badge on Each Card */
+.card::after {
+  content: "✨";
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.2rem;
+  transition: transform 0.3s;
 }
 
-.topbar-link:hover {
-  color: #1abc9c;
+.card:hover::after {
+  transform: rotate(15deg) scale(1.2);
+}
+
+/* Optional: Custom Gradient Per Card */
+.card:nth-child(1) { background: linear-gradient(135deg, #ff6b6b, #ff8787); color: white; }
+.card:nth-child(2) { background: linear-gradient(135deg, #1dd1a1, #48dbfb); color: white; }
+.card:nth-child(3) { background: linear-gradient(135deg, #54a0ff, #2e86de); color: white; }
+.card:nth-child(4) { background: linear-gradient(135deg, #feca57, #ffb142); color: white; }
+.card:nth-child(5) { background: linear-gradient(135deg, #5f27cd, #341f97); color: white; }
+.card:nth-child(6) { background: linear-gradient(135deg, #576574, #8395a7); color: white; }
+.card:nth-child(7) { background: linear-gradient(135deg, #ff9f43, #f368e0); color: white; }
+.card:nth-child(8) { background: linear-gradient(135deg, #10ac84, #00d2d3); color: white; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .main-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .subjects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content,
+  .footer {
+    margin-left: 0;
+  }
 }
