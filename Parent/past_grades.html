@@ -51,7 +51,7 @@
             ></a>
           </li>
           <li class="nav-item d-none d-sm-inline-block">
-            <a href="contact_page.html" class="nav-link">Contact</a>
+            <a href="contact.html" class="nav-link">Contact</a>
           </li>
         </ul>
 
@@ -78,9 +78,9 @@
       </nav>
       <!-- /.navbar -->
 
-      <!-- Main Sidebar -->
+      <!-- Main Sidebar Container -->
       <aside class="main-sidebar sidebar-dark-primary elevation-4">
-        <a href="dashboard_page.html" class="brand-link">
+        <a href="admin_dash.html" class="brand-link">
           <img
             src="../styles/logo2.png"
             alt="Logo"
@@ -104,7 +104,6 @@
             </div>
           </div>
 
-          <!-- Sidebar Menu -->
           <nav class="mt-2">
             <ul
               class="nav nav-pills nav-sidebar flex-column"
@@ -113,41 +112,21 @@
               data-accordion="false"
             >
               <li class="nav-item">
-                <a href="dashboard_page.html" class="nav-link">
+                <a href="dasboard.html" class="nav-link">
                   <i class="nav-icon fas fa-tachometer-alt"></i>
                   <p>Dashboard</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="classes_page.html" class="nav-link">
+                <a href="grades.html" class="nav-link">
                   <i class="nav-icon fas fa-th"></i>
-                  <p>Classes</p>
+                  <p>Grades</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="teachers_page.html" class="nav-link">
-                  <i class="nav-icon"
-                    ><ion-icon name="person-add"></ion-icon
-                  ></i>
-                  <p>Teachers</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="subjects_page.html" class="nav-link">
-                  <i class="nav-icon"><ion-icon name="library"></ion-icon></i>
-                  <p>Subjects</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="parents_page.html" class="nav-link">
-                  <i class="nav-icon"><ion-icon name="people"></ion-icon></i>
-                  <p>Parents</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="students_page.html" class="nav-link">
-                  <i class="nav-icon"><ion-icon name="id-card"></ion-icon></i>
-                  <p>Students</p>
+                <a href="attendance.html" class="nav-link">
+                  <i class="nav-icon"><ion-icon name="create"></ion-icon></i>
+                  <p>Attendance</p>
                 </a>
               </li>
             </ul>
@@ -162,15 +141,12 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1 class="m-0">Students Page</h1>
+                <h1 class="m-0">Past Grades Page</h1>
               </div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                   <li class="breadcrumb-item">
-                    <a href="dashboard_page.html">Home</a>
-                  </li>
-                  <li class="breadcrumb-item active">
-                    <a href="create_student.html">Create Student</a>
+                    <a href="dasboard.html">Home</a>
                   </li>
                 </ol>
               </div>
@@ -185,34 +161,56 @@
               <div class="col-12">
                 <div class="card">
                   <div class="card-header">
-                    <h3 class="card-title">Students</h3>
+                    <h3 class="card-title">Grades</h3>
                   </div>
                   <div class="card-body">
-                    <div class="col-sm-12 col-md-6 mb-3">
-                      <div id="example1_filter" class="dataTables_filter">
-                        <label>
-                          Search:
-                          <input
-                            type="search"
-                            id="classSearchInput"
-                            class="form-control form-control-sm"
-                            placeholder="Search for classes..."
-                            aria-controls="example1"
-                          />
-                        </label>
+                    <div class="row mb-3">
+                      <div class="col-md-4">
+                        <label for="filterClass">Select the year</label>
+                        <select
+                          id="filterClass"
+                          class="form-control form-control-sm"
+                        >
+                          <option value="">2025</option>
+                          <option value="tenth grade">Tenth Grade</option>
+                          <option value="ggg">GGG</option>
+                          <option value="nin">Nin</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="filterSection">Select the Semester</label>
+                        <select
+                          id="filterSection"
+                          class="form-control form-control-sm"
+                        >
+                          <option value="">First</option>
+                          <option value="A">A</option>
+                          <option value="B">B</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="filterCapacity">Select the Student</label>
+                        <select
+                          id="filterCapacity"
+                          class="form-control form-control-sm"
+                        >
+                          <option value="">Student 1</option>
+                          <option value="25">25</option>
+                        </select>
                       </div>
                     </div>
+
                     <table
                       id="example1"
                       class="table table-bordered table-striped"
                     >
                       <thead style="background-color: #343a40; color: white">
                         <tr>
-                          <th>ID</th>
-                          <th>Class</th>
-                          <th>Section</th>
-                          <th>Capacity</th>
-                          <th>Changes</th>
+                          <th>Subject</th>
+                          <th>First</th>
+                          <th>Second</th>
+                          <th>Participation</th>
+                          <th>Final</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -221,70 +219,21 @@
                           <td>tenth grade</td>
                           <td>A</td>
                           <td>25</td>
-                          <td style="text-align: center">
-                            <button
-                              type="button"
-                              class="btn btn-sm btn-primary mr-1"
-                            >
-                              <ion-icon name="create-outline"></ion-icon>
-                            </button>
-                            <button type="button" class="btn btn-sm btn-danger">
-                              <ion-icon name="trash-outline"></ion-icon>
-                            </button>
-                          </td>
+                          <td>315</td>
                         </tr>
                         <tr>
                           <td>2</td>
                           <td>ggg</td>
                           <td>B</td>
                           <td>25</td>
-                          <td style="text-align: center">
-                            <ion-icon
-                              name="create-outline"
-                              style="cursor: pointer; margin-right: 10px"
-                            ></ion-icon>
-                            <ion-icon
-                              name="trash-outline"
-                              style="cursor: pointer; font-size: 25"
-                            ></ion-icon>
-                          </td>
+                          <td>315</td>
                         </tr>
                         <tr>
                           <td></td>
                           <td>nin</td>
                           <td>B</td>
                           <td>25</td>
-                          <td style="text-align: center; width: 150px">
-                            <button
-                              type="button"
-                              style="
-                                background-color: #343a40;
-                                border: none;
-                                padding: 6px 10px;
-                                border-radius: 4px;
-                                margin-right: 8px;
-                              "
-                            >
-                              <ion-icon
-                                name="create-outline"
-                                style="color: white; font-size: 22px"
-                              ></ion-icon>
-                            </button>
-                            <button
-                              type="button"
-                              style="
-                                background-color: #343a40;
-                                border: none;
-                                padding: 6px 10px;
-                                border-radius: 4px;
-                              "
-                            >
-                              <ion-icon
-                                name="trash-outline"
-                                style="color: white; font-size: 22px"
-                              ></ion-icon>
-                            </button>
-                          </td>
+                          <td>315</td>
                         </tr>
                       </tbody>
                     </table>
@@ -320,6 +269,7 @@
       $("#classSearchInput").on("keyup", function () {
         var value = $(this).val().toLowerCase();
         $("#example1 tbody tr").filter(function () {
+          // نبحث فقط في العمود الثاني (الاسم)
           var className = $(this).find("td:nth-child(2)").text().toLowerCase();
           $(this).toggle(className.indexOf(value) > -1);
         });

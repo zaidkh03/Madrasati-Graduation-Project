@@ -100,7 +100,7 @@
               />
             </div>
             <div class="info">
-              <a href="#" class="d-block">Admin Name</a>
+              <a href="profile.html" class="d-block">Admin Name</a>
             </div>
           </div>
 
@@ -125,7 +125,9 @@
               </li>
               <li class="nav-item">
                 <a href="teachers_page.html" class="nav-link">
-                  <i class="nav-icon"><ion-icon name="person-add"></ion-icon></i>
+                  <i class="nav-icon"
+                    ><ion-icon name="person-add"></ion-icon
+                  ></i>
                   <p>Teachers</p>
                 </a>
               </li>
@@ -171,8 +173,11 @@
             <div class="card mb-4">
               <div class="card-header"><strong>Students</strong></div>
               <div class="card-body">
-                <table id="studentsTable" class="table table-bordered table-striped">
-                  <thead style="background-color: #343a40; color: white;">
+                <table
+                  id="studentsTable"
+                  class="table table-bordered table-striped"
+                >
+                  <thead style="background-color: #343a40; color: white">
                     <tr>
                       <th>Select</th>
                       <th>ID</th>
@@ -182,19 +187,37 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td><input type="checkbox" class="student-checkbox" value="s1" /></td>
+                      <td>
+                        <input
+                          type="checkbox"
+                          class="student-checkbox"
+                          value="s1"
+                        />
+                      </td>
                       <td>s1</td>
                       <td>Ali Hasan</td>
                       <td>7</td>
                     </tr>
                     <tr>
-                      <td><input type="checkbox" class="student-checkbox" value="s2" /></td>
+                      <td>
+                        <input
+                          type="checkbox"
+                          class="student-checkbox"
+                          value="s2"
+                        />
+                      </td>
                       <td>s2</td>
                       <td>Fatima Noor</td>
                       <td>7</td>
                     </tr>
                     <tr>
-                      <td><input type="checkbox" class="student-checkbox" value="s3" /></td>
+                      <td>
+                        <input
+                          type="checkbox"
+                          class="student-checkbox"
+                          value="s3"
+                        />
+                      </td>
                       <td>s3</td>
                       <td>Khaled Omar</td>
                       <td>8</td>
@@ -208,7 +231,10 @@
             <div class="card mb-4">
               <div class="card-header"><strong>Teachers</strong></div>
               <div class="card-body">
-                <table id="teachersTable" class="table table-bordered table-striped">
+                <table
+                  id="teachersTable"
+                  class="table table-bordered table-striped"
+                >
                   <thead>
                     <tr>
                       <th>Select</th>
@@ -219,19 +245,37 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td><input type="checkbox" class="teacher-checkbox" value="t1" /></td>
+                      <td>
+                        <input
+                          type="checkbox"
+                          class="teacher-checkbox"
+                          value="t1"
+                        />
+                      </td>
                       <td>t1</td>
                       <td>Mr. Ahmed</td>
                       <td>Math</td>
                     </tr>
                     <tr>
-                      <td><input type="checkbox" class="teacher-checkbox" value="t2" /></td>
+                      <td>
+                        <input
+                          type="checkbox"
+                          class="teacher-checkbox"
+                          value="t2"
+                        />
+                      </td>
                       <td>t2</td>
                       <td>Ms. Layla</td>
                       <td>English</td>
                     </tr>
                     <tr>
-                      <td><input type="checkbox" class="teacher-checkbox" value="t3" /></td>
+                      <td>
+                        <input
+                          type="checkbox"
+                          class="teacher-checkbox"
+                          value="t3"
+                        />
+                      </td>
                       <td>t3</td>
                       <td>Mr. Sami</td>
                       <td>Science</td>
@@ -243,7 +287,11 @@
 
             <!-- Submit Button -->
             <div class="text-center mb-4">
-              <button class="btn btn-primary" onclick="submitForm()"><a href="classes_page.html" style="color: white;">Assign to Class</a></button>
+              <button class="btn btn-primary" onclick="submitForm()">
+                <a href="classes_page.html" style="color: white"
+                  >Assign to Class</a
+                >
+              </button>
             </div>
           </div>
         </section>
@@ -262,7 +310,7 @@
     <script src="../https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
     <script>
       $(function () {
-        $('#studentsTable').DataTable({
+        $("#studentsTable").DataTable({
           paging: false,
           info: false,
           lengthChange: false,
@@ -270,7 +318,7 @@
           searching: true,
         });
 
-        $('#teachersTable').DataTable({
+        $("#teachersTable").DataTable({
           paging: false,
           info: false,
           lengthChange: false,
@@ -283,17 +331,15 @@
         const selectedStudents = [];
         const selectedTeachers = [];
 
-        $('.student-checkbox:checked').each(function () {
+        $(".student-checkbox:checked").each(function () {
           selectedStudents.push($(this).val());
         });
 
-        $('.teacher-checkbox:checked').each(function () {
+        $(".teacher-checkbox:checked").each(function () {
           selectedTeachers.push($(this).val());
         });
 
-        alert(
-          `Teachers and students are assigned to the class successfully`
-        );
+        alert(`Teachers and students are assigned to the class successfully`);
       }
     </script>
   </body>

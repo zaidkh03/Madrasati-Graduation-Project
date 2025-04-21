@@ -19,13 +19,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Theme style -->
     <link rel="stylesheet" href="../dist/css/adminlte.min.css" />
     <link rel="stylesheet" href="../styles/dashstyles.css" />
-
   </head>
-  <body class="hold-transition sidebar-mini" style="background-color: #f1f2f6;">
+  <body class="hold-transition sidebar-mini" style="background-color: #f1f2f6">
     <div class="wrapper">
       <!-- Preloader -->
-      <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__shake" src="../loginstyls/logo3.png" alt="AdminLTELogo" height="60" width="60">
+      <div
+        class="preloader flex-column justify-content-center align-items-center"
+      >
+        <img
+          class="animation__shake"
+          src="../loginstyls/logo3.png"
+          alt="AdminLTELogo"
+          height="60"
+          width="60"
+        />
       </div>
       <!-- Navbar -->
       <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -38,7 +45,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </li>
           <li class="nav-item d-none d-sm-inline-block"></li>
           <li class="nav-item d-none d-sm-inline-block">
-            <a href="contact_page.html" class="nav-link">Contact</a>
+            <a href="contact.html" class="nav-link">Contact</a>
           </li>
         </ul>
 
@@ -48,64 +55,60 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a class="nav-link" href="http://localhost/project_madrasti/">
               <i>Logout</i>
             </a>
+          </li>
         </ul>
       </nav>
       <!-- /.navbar -->
 
-      <!-- Main Sidebar -->
+      <!-- Main Sidebar Container -->
       <aside class="main-sidebar sidebar-dark-primary elevation-4">
-        <a href="dashboard_page.html" class="brand-link">
-          <img src="../styles/logo2.png" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: 0.8" />
+        <a href="admin_dash.html" class="brand-link">
+          <img
+            src="../styles/logo2.png"
+            alt="Logo"
+            class="brand-image img-circle elevation-3"
+            style="opacity: 0.8"
+          />
           <span class="brand-text font-weight-light">Madrasati</span>
         </a>
 
         <div class="sidebar">
           <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-              <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image" />
+              <img
+                src="../dist/img/user2-160x160.jpg"
+                class="img-circle elevation-2"
+                alt="User Image"
+              />
             </div>
             <div class="info">
               <a href="profile.html" class="d-block">Admin Name</a>
             </div>
           </div>
 
-          <!-- Sidebar Menu -->
           <nav class="mt-2">
-            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <ul
+              class="nav nav-pills nav-sidebar flex-column"
+              data-widget="treeview"
+              role="menu"
+              data-accordion="false"
+            >
               <li class="nav-item">
-                <a href="dashboard_page.html" class="nav-link">
+                <a href="dasboard.html" class="nav-link">
                   <i class="nav-icon fas fa-tachometer-alt"></i>
                   <p>Dashboard</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="classes_page.html" class="nav-link">
+                <a href="grades.html" class="nav-link">
                   <i class="nav-icon fas fa-th"></i>
-                  <p>Classes</p>
+                  <p>Grades</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="teachers_page.html" class="nav-link">
-                  <i class="nav-icon"><ion-icon name="person-add"></ion-icon></i>
-                  <p>Teachers</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="subjects_page.html" class="nav-link">
-                  <i class="nav-icon"><ion-icon name="library"></ion-icon></i>
-                  <p>Subjects</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="parents_page.html" class="nav-link">
-                  <i class="nav-icon"><ion-icon name="people"></ion-icon></i>
-                  <p>Parents</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="students_page.html" class="nav-link">
-                  <i class="nav-icon"><ion-icon name="id-card"></ion-icon></i>
-                  <p>Students</p>
+                <a href="attendance.html" class="nav-link">
+                  <i class="nav-icon"><ion-icon name="create"></ion-icon></i>
+                  <p>Attendance</p>
                 </a>
               </li>
             </ul>
@@ -119,25 +122,39 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!--cards section-->
             <h3>Dashboard</h3>
           </div>
+          <div><h3>Student 1</h3></div>
           <div class="cards">
             <div class="card blue">15<br /><span>Classes</span></div>
             <div class="card green">53<br /><span>Teachers</span></div>
             <div class="card yellow">4/10<br /><span>Students</span></div>
             <div class="card red">10-b<br /><span>Parents</span></div>
           </div>
-          
+          <div><h3>Student 2</h3></div>
+          <div class="cards">
+            <div class="card blue">15<br /><span>Classes</span></div>
+            <div class="card green">53<br /><span>Teachers</span></div>
+            <div class="card yellow">4/10<br /><span>Students</span></div>
+            <div class="card red">10-b<br /><span>Parents</span></div>
+          </div>
+
           <!--GPA section-->
           <div class="lower-section">
             <div class="chart-box">
               <h3>GPA over years</h3>
               <canvas id="gpaChart"></canvas>
             </div>
-      
+
+            <!-- Alerts Section -->
+            <div class="notifications">
+              <h3>🔔 Notifications</h3>
+              <div class="alert red">🔴 Alert!</div>
+              <div class="alert blue">🔵 Alert!</div>
+              <div class="alert yellow">🟡 Alert!</div>
+              <div class="alert green">🟢 Alert!</div>
+            </div>
           </div>
         </div>
       </div>
-      
-  
 
       <!-- Control Sidebar -->
       <aside class="control-sidebar control-sidebar-dark">
@@ -170,6 +187,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="../styles/dash.js"></script>
+    <script src="../styles/dash.js"></script>
   </body>
 </html>
