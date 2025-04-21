@@ -69,10 +69,10 @@
         <div class="sidebar">
           <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-              <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image" />
+              <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image" />
             </div>
             <div class="info">
-              <a href="#" class="d-block">Admin Name</a>
+              <a href="profile.html" class="d-block">Admin Name</a>
             </div>
           </div>
 
@@ -122,129 +122,93 @@
 
       <!-- Content Wrapper -->
       <div class="content-wrapper">
-        <!-- Content Header -->
-        
-
-        <aside class="control-sidebar control-sidebar-dark">
-            <div class="p-3">
-              <h5>Title</h5>
-              <p>Sidebar content</p>
+        <div class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6">
+                <h1 class="m-0">Create a Student</h1>
+                <hr>
+              </div>
+              <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                  <li class="breadcrumb-item"><a href="dashboard_page.html">Home</a></li>
+                </ol>
+              </div>
             </div>
-          </aside>
+          </div>
+        </div>
 
-          <div class="content-wrapper">
-            <!-- Content Header -->
-
-            <div class="content-header">
-              <div class="container-fluid">
-                <div class="row mb-2">
-                  <div class="col-sm-6">
-                    <h1 class="m-0">Create a Student</h1>
-                    <hr>
-                  </div>
-                  <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                      <li class="breadcrumb-item"><a href="dashboard_page.html">Home</a></li>
-                    </ol>
-                  </div>
-                </div>
+        <!-- form start -->
+        <section class="content">
+          <form role="form">
+            <div class="box-body">
+              <div class="form-group">
+                <label for="First-Name">First Name: </label>
+                <input type="text" class="form-control" id="First-Name" placeholder="Enter the First Name of the student" required />
+              </div>
+              <div class="form-group">
+                <label for="Second-Name">Second Name:</label>
+                <input type="text" class="form-control" id="Second-Name" placeholder="Enter the Second Name of the student" required />
+              </div>
+              <div class="form-group">
+                <label for="Third-Name">Third Name:</label>
+                <input type="text" class="form-control" id="Third-Name" placeholder="Enter the Third Name of the student" required />
+              </div>
+              <div class="form-group">
+                <label for="Last-Name">Last Name:</label>
+                <input type="text" class="form-control" id="Last-Name" placeholder="Enter the Last Name of the student" required />
+              </div>
+              <div class="form-group">
+                <label for="National-ID">National ID:</label>
+                <input type="text" class="form-control" id="National-ID" inputmode="numeric" pattern="[0-9]*" placeholder="Enter the National ID of the student" required />
+              </div>
+              <div class="form-group">
+                <label for="Address">Address:</label>
+                <input type="text" class="form-control" id="Address" placeholder="Enter the Address of the student" required />
+              </div>
+              <div class="form-group">
+                <label for="Status">Status:</label>
+                <input type="text" class="form-control" id="Status" placeholder="Enter the Status of the student" required />
+              </div>
+              <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input class="form-control" type="date" id="dob" name="dob" required>
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select class="form-control" id="gender" name="gender" required>
+                  <option value="" disabled selected>Select your gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="Parent National ID">Parent National ID:</label>
+                <input type="text" class="form-control" id="Parent-National-ID" inputmode="numeric" pattern="[0-9]*" placeholder="Enter the Parent National ID" required />
+              </div>
+              <div class="form-group">
+                <label for="School-ID">School ID:</label>
+                <input type="text" class="form-control" id="School-ID" inputmode="numeric" pattern="[0-9]*" placeholder="Enter the School ID" required />
               </div>
             </div>
 
-            <div class="content-wrapper">
-
-                <div class="content-header">
-                    <div class="container-fluid">
-                      <div class="row mb-2">
-                        <div class="col-sm-6">
-                  <h3 class="m-0">Student info</h3>
-                </div>
+            <div class="box-footer">
+              <button type="button" class="btn btn-secondary"><a href="students_page.html" style="color: white;">Cancel</a></button>
+              <button type="submit" class="btn btn-primary"><a href="students_page.html" style="color: white;">Submit</a></button>
             </div>
-        </div>
+          </form>
+        </section>
+      </div>
     </div>
 
+    <!-- Footer -->
+    <footer class="main-footer">
+      <strong>&copy; 2025 MADRASATI.</strong> All rights reserved.
+    </footer>
 
-                <!-- /.box-header -->
-                <!-- form start -->
-                <Section class="content">
-
-                <form role="form">
-                  <div class="box-body">
-                    <div class="form-group">
-                      <label for="First-Name">First Name: </label>
-                      <input type="text" class="form-control" id="First-Name" placeholder="Enter the First Name of the student" required />
-                    </div>
-                    <div class="form-group">
-                      <label for="Second-Name">Second Name:</label>
-                      <input type="text" class="form-control" id="Second-Name" placeholder="Enter the Second Name of the student" required />
-                    </div>
-                    <div class="form-group">
-                      <label for="Third-Name">Third Name:</label>
-                      <input type="text" class="form-control" id="Third-Name" placeholder="Enter the Third Name of the student" required />
-                    </div>
-                    <div class="form-group">
-                      <label for="Last-Name">Last Name:</label>
-                      <input type="text" class="form-control" id="Last-Name" placeholder="Enter the Last Name of the student" required />
-                    </div>
-                    <div class="form-group">
-                      <label for="National ID">National ID:</label>
-                      <input type="text" class="form-control" id="National-ID" inputmode="numeric" pattern="[0-9]*" placeholder="Enter the National ID of the student" required />
-                    </div>
-                    <div class="form-group">
-                      <label for="Address">Address</label>
-                      <input type="text" class="form-control" id="Address" placeholder="Enter the Address of the student" required />
-                    </div>
-                    <div class="form-group">
-                      <label for="Status">Status</label>
-                      <input type="text" class="form-control" id="Status" placeholder="Enter the Address of the student" required />
-                    </div>
-                    <div class="form-group" >
-                      <label for="dob">Date of Birth:</label>
-                      <input class="form-control" type="date" id="dob" name="dob" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="gender">Gender:</label>
-                      <select class="form-control" id="gender" name="gender" required>
-                        <option value="" disabled selected>Select your gender</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                      </select>
-                      </div>
-                      <div class="form-group">
-                        <label for="Parent National ID:">Parent National ID:</label>
-                        <input type="Status" class="form-control" id="Status" inputmode="numeric" pattern="[0-9]*" placeholder="Enter the Address of the student" required />
-                      </div>
-                      <div class="form-group">
-                        <label for="School ID:">School ID:</label>
-                        <input type="text" class="form-control" id="School ID:" inputmode="numeric" pattern="[0-9]*" placeholder="Enter the Address of the student" required />
-                      </div>
-                  </div>
-                  <!-- /.box-body -->
-    
-                  <div class="box-footer">
-                    <button type="submit" class="btn" style="background-color: gray; "><a href="students_page.html" style="color: white;">Cancle</a></button>
-                    <button type="submit" class="btn btn-primary"><a href="students_page.html" style="color: white;">Submit</a></button>
-
-                  </div>
-                  
-                </form>
-              </div>
-          </div>
-          </section>
-    
-          <!-- Footer -->
-          <footer class="main-footer">
-            <strong>&copy; 2025 MADRASATI.</strong> All rights reserved.
-          </footer>
-        </div>
-    
-        <!-- Scripts -->
-        <script src="../plugins/jquery/jquery.min.js"></script>
-        <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="../dist/js/adminlte.min.js"></script>
-    
-        <!-- Search Filter Script -->
-        
-        
-      </body>
-    </html>
+    <!-- Scripts -->
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../dist/js/adminlte.min.js"></script>
+  </body>
+</html>
