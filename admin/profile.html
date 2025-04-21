@@ -132,241 +132,68 @@
       </aside>
 
       <!-- Content Wrapper -->
-      <!DOCTYPE html>
-      <html lang="en">
-        <head>
-          <meta charset="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <title>AdminLTE 3 | Starter</title>
-
-          <!-- Google Font: Source Sans Pro -->
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
-          />
-          <!-- Font Awesome Icons -->
-          <link
-            rel="stylesheet"
-            href="../plugins/fontawesome-free/css/all.min.css"
-          />
-          <!-- Theme style -->
-          <link rel="stylesheet" href="../dist/css/adminlte.min.css" />
-          <!-- Custom contact style -->
-          <link rel="stylesheet" href="../contact/contact_style.css" />
-          <!--profile Style-->
-          <link rel="stylesheet" href="../styles/profile.css" />
-        </head>
-        <body class="hold-transition sidebar-mini">
-          <div class="wrapper">
-            <!-- Preloader -->
-            <div
-              class="preloader flex-column justify-content-center align-items-center"
-            >
-              <img
-                class="animation__shake"
-                src="../loginstyls/logo3.png"
-                alt="AdminLTELogo"
-                height="60"
-                width="60"
-              />
+      <div class="content-wrapper">
+        <div class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6">
+                <h2 class="m-0">👤 Profile</h2>
+              </div>
             </div>
-            <!-- Navbar -->
-            <nav
-              class="main-header navbar navbar-expand navbar-white navbar-light"
-            >
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    data-widget="pushmenu"
-                    href="#"
-                    role="button"
-                    ><i class="fas fa-bars"></i
-                  ></a>
-                </li>
-                <li class="nav-item d-none d-sm-inline-block"></li>
-              </ul>
-
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                  <a class="nav-link" data-toggle="dropdown" href="#">
-                    <i class="far fa-bell"></i>
-                    <span class="badge badge-warning navbar-badge">15</span>
-                  </a>
-                  <div
-                    class="dropdown-menu dropdown-menu-lg dropdown-menu-right"
-                  >
-                    <span class="dropdown-header">15 Notifications</span>
-                    <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item">
-                      <i class="fas fa-envelope mr-2"></i> new messages
-                    </a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="http://localhost/project_madrasti/">
-                    <i>Logout</i>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <!-- /.navbar -->
-
-            <!-- Main Sidebar Container -->
-            <aside class="main-sidebar sidebar-dark-primary elevation-4">
-              <a href="dashboard.html" class="brand-link">
-                <img
-                  src="../styles/logo2.png"
-                  alt="Logo"
-                  class="brand-image img-circle elevation-3"
-                  style="opacity: 0.8"
-                />
-                <span class="brand-text font-weight-light">Madrasati</span>
-              </a>
-
-              <div class="sidebar">
-                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                  <div class="image">
-                    <img
-                      src="../dist/img/user2-160x160.jpg"
-                      class="img-circle elevation-2"
-                      alt="User Image"
-                    />
-                  </div>
-                  <div class="info">
-                    <a href="#" class="d-block">Admin Name</a>
-                  </div>
-                </div>
-
-                <nav class="mt-2">
-                  <ul
-                    class="nav nav-pills nav-sidebar flex-column"
-                    data-widget="treeview"
-                    role="menu"
-                    data-accordion="false"
-                  >
-                    <li class="nav-item">
-                      <a href="dashboard.html" class="nav-link">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
-                        <p>Dashboard</p>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="grads.html" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
-                        <p>Grades</p>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="notifications.html" class="nav-link">
-                        <i class="nav-icon"
-                          ><ion-icon name="notifications"></ion-icon
-                        ></i>
-                        <p>Notifications</p>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="attendance.html" class="nav-link">
-                        <i class="nav-icon"
-                          ><ion-icon name="create"></ion-icon
-                        ></i>
-                        <p>Attendance</p>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </aside>
-
-            <!-- Content Wrapper -->
-            <div class="content-wrapper">
-              <div class="content-header">
-                <div class="container-fluid">
-                  <div class="row mb-2">
-                    <div class="col-sm-6">
-                      <h2 class="m-0">👤 Profile</h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <section class="content">
-                <div class="container-fluid">
-                  <!-- Buttons -->
-                  <div class="upload-section">
-                    <label for="bg-upload" class="upload-btn"
-                      >Choose cover photo
-                    </label>
-                    <input type="file" id="bg-upload" accept="image/*" hidden />
-                    <button id="remove-bg-btn" class="remove-btn">
-                      Delete cover photo
-                    </button>
-                  </div>
-
-                  <!-- Profile Section -->
-                  <div class="profile-header" id="profile-header">
-                    <div class="avatar">SN</div>
-                    <div class="profile-info">
-                      <strong>Student Name</strong><br />
-                      <small>student</small>
-                    </div>
-                  </div>
-
-                  <div class="info-grid">
-                    <div class="info-card">
-                      <h3>🆔 National ID</h3>
-                      <p>value</p>
-                    </div>
-                    <div class="info-card">
-                      <h3>🎂 Date of Birth</h3>
-                      <p>value</p>
-                    </div>
-                    <div class="info-card">
-                      <h3>⚧ Gender</h3>
-                      <p>value</p>
-                    </div>
-                    <div class="info-card">
-                      <h3>🏠 Address</h3>
-                      <p>value</p>
-                    </div>
-                    <div class="info-card">
-                      <h3>🏫 Current Grade</h3>
-                      <p>value</p>
-                    </div>
-                    <div class="info-card">
-                      <h3>👨‍👩‍👧 Parent Name</h3>
-                      <p>value</p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div>
-
-            <aside class="control-sidebar control-sidebar-dark">
-              <div class="p-3">
-                <h5>Title</h5>
-                <p>Sidebar content</p>
-              </div>
-            </aside>
-
-            <!-- Main Footer -->
-            <footer class="main-footer">
-              <!-- Default to the left -->
-              <strong>Copyright &copy; 2025 MADRASATI.</strong> All rights
-              reserved.
-            </footer>
           </div>
+        </div>
 
-          <!-- Scripts -->
-          <script src="../plugins/jquery/jquery.min.js"></script>
-          <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-          <script src="../dist/js/adminlte.min.js"></script>
-          <script
-            type="module"
-            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-          ></script>
-        </body>
-      </html>
+        <section class="content">
+          <div class="container-fluid">
+            <!-- Buttons -->
+            <div class="upload-section">
+              <label for="bg-upload" class="upload-btn"
+                >Choose cover photo
+              </label>
+              <input type="file" id="bg-upload" accept="image/*" hidden />
+              <button id="remove-bg-btn" class="remove-btn">
+                Delete cover photo
+              </button>
+            </div>
+
+            <!-- Profile Section -->
+            <div class="profile-header" id="profile-header">
+              <div class="avatar">SN</div>
+              <div class="profile-info">
+                <strong>Student Name</strong><br />
+                <small>student</small>
+              </div>
+            </div>
+
+            <div class="info-grid">
+              <div class="info-card">
+                <h3>🆔 National ID</h3>
+                <p>value</p>
+              </div>
+              <div class="info-card">
+                <h3>🎂 Date of Birth</h3>
+                <p>value</p>
+              </div>
+              <div class="info-card">
+                <h3>⚧ Gender</h3>
+                <p>value</p>
+              </div>
+              <div class="info-card">
+                <h3>🏠 Address</h3>
+                <p>value</p>
+              </div>
+              <div class="info-card">
+                <h3>🏫 Current Grade</h3>
+                <p>value</p>
+              </div>
+              <div class="info-card">
+                <h3>👨‍👩‍👧 Parent Name</h3>
+                <p>value</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
 
       <aside class="control-sidebar control-sidebar-dark">
         <div class="p-3">
