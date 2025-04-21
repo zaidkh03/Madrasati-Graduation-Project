@@ -6,7 +6,10 @@
     <title>AdminLTE 3 | Classes Page</title>
 
     <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+    />
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css" />
     <!-- AdminLTE -->
@@ -14,22 +17,38 @@
     <!-- Custom contact style -->
     <link rel="stylesheet" href="../contact/contact_style.css" />
     <!-- Ionicons -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
 
   <body class="hold-transition sidebar-mini">
     <div class="wrapper">
       <!-- Preloader -->
-      <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__shake" src="../loginstyls/logo3.png" alt="AdminLTELogo" height="60" width="60" />
+      <div
+        class="preloader flex-column justify-content-center align-items-center"
+      >
+        <img
+          class="animation__shake"
+          src="../loginstyls/logo3.png"
+          alt="AdminLTELogo"
+          height="60"
+          width="60"
+        />
       </div>
 
       <!-- Navbar -->
       <nav class="main-header navbar navbar-expand navbar-white navbar-light">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"
+              ><i class="fas fa-bars"></i
+            ></a>
           </li>
           <li class="nav-item d-none d-sm-inline-block">
             <a href="contact_page.html" class="nav-link">Contact</a>
@@ -62,23 +81,37 @@
       <!-- Main Sidebar -->
       <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <a href="admin_dash.html" class="brand-link">
-          <img src="../styles/logo2.png" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: 0.8" />
+          <img
+            src="../styles/logo2.png"
+            alt="Logo"
+            class="brand-image img-circle elevation-3"
+            style="opacity: 0.8"
+          />
           <span class="brand-text font-weight-light">Madrasati</span>
         </a>
 
         <div class="sidebar">
           <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-              <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image" />
+              <img
+                src="../dist/img/user2-160x160.jpg"
+                class="img-circle elevation-2"
+                alt="User Image"
+              />
             </div>
             <div class="info">
-              <a href="#" class="d-block">Admin Name</a>
+              <a href="profile.html" class="d-block">Admin Name</a>
             </div>
           </div>
 
           <!-- Sidebar Menu -->
           <nav class="mt-2">
-            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <ul
+              class="nav nav-pills nav-sidebar flex-column"
+              data-widget="treeview"
+              role="menu"
+              data-accordion="false"
+            >
               <li class="nav-item">
                 <a href="dashboard_page.html" class="nav-link">
                   <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -93,7 +126,9 @@
               </li>
               <li class="nav-item">
                 <a href="teachers_page.html" class="nav-link">
-                  <i class="nav-icon"><ion-icon name="person-add"></ion-icon></i>
+                  <i class="nav-icon"
+                    ><ion-icon name="person-add"></ion-icon
+                  ></i>
                   <p>Teachers</p>
                 </a>
               </li>
@@ -131,8 +166,12 @@
               </div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
-                  <li class="breadcrumb-item"><a href="dashboard_page.html">Home</a></li>
-                  <li class="breadcrumb-item active"><a href="create_teacher.html">Create Teacher</a></li>
+                  <li class="breadcrumb-item">
+                    <a href="dashboard_page.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item active">
+                    <a href="create_teacher.html">Create Teacher</a>
+                  </li>
                 </ol>
               </div>
             </div>
@@ -153,12 +192,21 @@
                       <div id="example1_filter" class="dataTables_filter">
                         <label>
                           Search:
-                          <input type="search" id="classSearchInput" class="form-control form-control-sm" placeholder="Search for classes..." aria-controls="example1">
+                          <input
+                            type="search"
+                            id="classSearchInput"
+                            class="form-control form-control-sm"
+                            placeholder="Search for classes..."
+                            aria-controls="example1"
+                          />
                         </label>
                       </div>
                     </div>
-                    <table id="example1" class="table table-bordered table-striped">
-                      <thead style="background-color: #343a40; color: white;">
+                    <table
+                      id="example1"
+                      class="table table-bordered table-striped"
+                    >
+                      <thead style="background-color: #343a40; color: white">
                         <tr>
                           <th>ID</th>
                           <th>Name</th>
@@ -173,8 +221,11 @@
                           <td>tenth grade</td>
                           <td>A</td>
                           <td>25</td>
-                          <td style="text-align: center;">
-                            <button type="button" class="btn btn-sm btn-primary mr-1">
+                          <td style="text-align: center">
+                            <button
+                              type="button"
+                              class="btn btn-sm btn-primary mr-1"
+                            >
                               <ion-icon name="create-outline"></ion-icon>
                             </button>
                             <button type="button" class="btn btn-sm btn-danger">
@@ -187,9 +238,15 @@
                           <td>ggg</td>
                           <td>B</td>
                           <td>25</td>
-                          <td style="text-align: center;">
-                            <ion-icon name="create-outline" style="cursor: pointer; margin-right: 10px;"></ion-icon>
-                            <ion-icon name="trash-outline" style="cursor: pointer; font-size: 25;"></ion-icon>
+                          <td style="text-align: center">
+                            <ion-icon
+                              name="create-outline"
+                              style="cursor: pointer; margin-right: 10px"
+                            ></ion-icon>
+                            <ion-icon
+                              name="trash-outline"
+                              style="cursor: pointer; font-size: 25"
+                            ></ion-icon>
                           </td>
                         </tr>
                         <tr>
@@ -197,18 +254,40 @@
                           <td>nin</td>
                           <td>B</td>
                           <td>25</td>
-                          <td style="text-align: center; width: 150px;">
-                            <button type="button" style="background-color: #343a40; border: none; padding: 6px 10px; border-radius: 4px; margin-right: 8px;">
-                              <ion-icon name="create-outline" style="color: white; font-size: 22px;"></ion-icon>
+                          <td style="text-align: center; width: 150px">
+                            <button
+                              type="button"
+                              style="
+                                background-color: #343a40;
+                                border: none;
+                                padding: 6px 10px;
+                                border-radius: 4px;
+                                margin-right: 8px;
+                              "
+                            >
+                              <ion-icon
+                                name="create-outline"
+                                style="color: white; font-size: 22px"
+                              ></ion-icon>
                             </button>
-                            <button type="button" style="background-color: #343a40; border: none; padding: 6px 10px; border-radius: 4px;">
-                              <ion-icon name="trash-outline" style="color: white; font-size: 22px;"></ion-icon>
+                            <button
+                              type="button"
+                              style="
+                                background-color: #343a40;
+                                border: none;
+                                padding: 6px 10px;
+                                border-radius: 4px;
+                              "
+                            >
+                              <ion-icon
+                                name="trash-outline"
+                                style="color: white; font-size: 22px"
+                              ></ion-icon>
                             </button>
                           </td>
                         </tr>
                       </tbody>
                     </table>
-                    
                   </div>
                 </div>
               </div>
@@ -238,14 +317,13 @@
 
     <!-- Search Filter Script -->
     <script>
-    $("#classSearchInput").on("keyup", function() {
-  var value = $(this).val().toLowerCase();
-  $("#example1 tbody tr").filter(function() {
-    var className = $(this).find("td:nth-child(2)").text().toLowerCase();
-    $(this).toggle(className.indexOf(value) > -1);
-  });
-});
+      $("#classSearchInput").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $("#example1 tbody tr").filter(function () {
+          var className = $(this).find("td:nth-child(2)").text().toLowerCase();
+          $(this).toggle(className.indexOf(value) > -1);
+        });
+      });
     </script>
-    
   </body>
 </html>
