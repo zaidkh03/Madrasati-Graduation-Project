@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Grades</title>
+    <title>Subject </title>
 
     <!-- Google Font: Source Sans Pro -->
     <link
@@ -17,7 +17,7 @@
     <!-- Custom contact style -->
     <link rel="stylesheet" href="../contact/contact_style.css" />
     <!--profile Style-->
-    <link rel="stylesheet" href="grades.css" />
+    <link rel="stylesheet" href="Subject2.css" />
   </head>
   <body class="hold-transition sidebar-mini">
     <div class="wrapper">
@@ -41,7 +41,7 @@
               ><i class="fas fa-bars"></i
             ></a>
           </li>
-          <li class="nav-item d-none d-sm-inline-block"></li>
+          <li class="nav-item d-none d-sm-inline-block">   <a href="contect.html" class="nav-link">Contact</a></li>
         </ul>
 
         <ul class="navbar-nav ml-auto">
@@ -125,82 +125,39 @@
           </nav>
         </div>
       </aside>
-      <!-- ✅ Grades Section -->
-      <section class="grades-section">
-        <h2>📈 Grades</h2>
-        <div class="filters">
-          <div>
-            <label for="year">Select the year</label><br>
-            <select id="year">
-              <option value="">Select</option>
-              <option value="2023">2023</option>
-              <option value="2024">2024</option>
-              <option value="2025">2025</option>
-            </select>
-          </div>
-          <div>
-            <label for="semester">Select the Semester</label><br>
-            <select id="semester">
-              <option>Select</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="table-container">
-          <table>
-            <thead>
-              <tr>
-                <th>Subject</th>
-                <th>First Mark</th>
-                <th>Second Mark</th>
-                <th>Participation</th>
-                <th>Final Mark</th>
-                <th>Total</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>Math</td><td>15</td><td>18</td><td>5</td><td>32</td><td>70</td></tr>
-              <tr><td>Science</td><td>16</td><td>17</td><td>6</td><td>31</td><td>70</td></tr>
-              <tr><td>English</td><td>14</td><td>19</td><td>4</td><td>30</td><td>67</td></tr>
-              <tr><td>History</td><td>13</td><td>15</td><td>5</td><td>29</td><td>62</td></tr>
-              <tr><td>Geography</td><td>15</td><td>16</td><td>6</td><td>28</td><td>65</td></tr>
-              <tr><td>Arabic</td><td>17</td><td>18</td><td>5</td><td>30</td><td>70</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- ✅ Footer -->
-      <footer class="main-footer">
-        <!-- Default to the left -->
-        <strong>Copyright &copy; 2025 MADRASATI.</strong> All rights reserved.
-      </footer>
-    </div>
-
-    
-    <script src="../plugins/jquery/jquery.min.js"></script>
-    <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../dist/js/adminlte.min.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
 
   
-  <script>
-    document.getElementById("year").addEventListener("change", function () {
-      const selectedYear = this.value;
-      if (selectedYear && parseInt(selectedYear) < 2025) {
-        window.location.href = "grades2.html";
-      }
-    });
 
-    function toggleSidebar() {
-      const sidebar = document.querySelector('.sidebar');
-      const body = document.body;
-      sidebar.classList.toggle('open');
-      body.classList.toggle('sidebar-open');
-    }
-  </script>
+    <!-- Main Content -->
+    <div class="main-content">
+      <h2>📚 Subject</h2>
+      <div class="subject-card">
+        <div class="card subject-info">
+          <h3>📘 Book Name:</h3>
+          <p>book-name-1st-edition</p>
+        </div>
+        <div class="card description">
+          <h3>Description:</h3>
+          <p>This is a detailed description of the subject. You can write information about the curriculum, key topics, and the learning objectives here. All subjects are structured for maximum learning and understanding.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <!-- Default to the left -->
+      <strong>Copyright &copy; 2025 MADRASATI.</strong> All rights reserved.
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../plugins/jquery/jquery.min.js"></script>
+  <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../dist/js/adminlte.min.js"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  </div>
 </body>
 </html>

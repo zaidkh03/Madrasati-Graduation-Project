@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Attendance</title>
+    <title>Subject</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link
@@ -17,7 +17,7 @@
     <!-- Custom contact style -->
     <link rel="stylesheet" href="../contact/contact_style.css" />
     <!--profile Style-->
-    <link rel="stylesheet" href="Attendance.css" />
+    <link rel="stylesheet" href="Subject.css" />
   </head>
   <body class="hold-transition sidebar-mini">
     <div class="wrapper">
@@ -41,7 +41,7 @@
               ><i class="fas fa-bars"></i
             ></a>
           </li>
-          <li class="nav-item d-none d-sm-inline-block"></li>
+          <li class="nav-item d-none d-sm-inline-block">   <a href="contect.html" class="nav-link">Contact</a></li>
         </ul>
 
         <ul class="navbar-nav ml-auto">
@@ -128,24 +128,17 @@
 
     <!-- Main Content -->
     <div class="main-content">
-      <h2>📝 Attendance</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Absence Number</th>
-            <th>Date</th>
-            <th>Excuse</th>
-            <th>Parent Agreement</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td></tr>
-        </tbody>
-      </table>
+      <h2>📚 Subjects</h2>
+      <div class="subjects-grid">
+        <div class="card">Arabic</div>
+        <div class="card">English</div>
+        <div class="card">Math</div>
+        <div class="card">Science</div>
+        <div class="card">History</div>
+        <div class="card">Computer</div>
+        <div class="card">Art</div>
+        <div class="card">Sport</div>
+      </div>
     </div>
 
     <!-- Footer -->
@@ -155,7 +148,7 @@
     </footer>
   </div>
 
-  <!-- Scripts -->
+  
   <script src="../plugins/jquery/jquery.min.js"></script>
   <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../dist/js/adminlte.min.js"></script>
@@ -163,5 +156,13 @@
     type="module"
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
   ></script>
+
+  <script>
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('click', () => {
+        alert(`You clicked on ${card.textContent} 🚀`);
+      });
+    });
+  </script>
 </body>
 </html>

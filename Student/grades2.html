@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact</title>
+    <title>Grades Overview</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link
@@ -17,7 +17,7 @@
     <!-- Custom contact style -->
     <link rel="stylesheet" href="../contact/contact_style.css" />
     <!--profile Style-->
-    <link rel="stylesheet" href="contect.css" />
+    <link rel="stylesheet" href="grades2.css" />
   </head>
   <body class="hold-transition sidebar-mini">
     <div class="wrapper">
@@ -41,7 +41,7 @@
               ><i class="fas fa-bars"></i
             ></a>
           </li>
-          <li class="nav-item d-none d-sm-inline-block"></li>
+          <li class="nav-item d-none d-sm-inline-block">   <a href="contect.html" class="nav-link">Contact</a></li>
         </ul>
 
         <ul class="navbar-nav ml-auto">
@@ -126,48 +126,57 @@
         </div>
       </aside>
 
-    <div class="contact-section">
-      <h2>📞 Get in Touch</h2>
-      <div class="contact-cards">
-        <div class="card teacher">
-          <img src="https://img.icons8.com/ios/50/teacher.png" alt="Teacher Icon">
-          <h3> Teacher</h3>
-          <table>
-            <tr><td><strong>Phone:</strong></td><td><a href="tel:0799999999">0799999999</a></td></tr>
-            <tr><td><strong>Email:</strong></td><td><a href="mailto:Email@domain.com">Email@domain.com</a></td></tr>
-          </table>
-        </div>
+    <div class="grades-section">
+      <h2>📈 Grades Overview</h2>
 
-        <div class="card school">
-          <img src="https://img.icons8.com/ios/50/school.png" alt="School Icon">
-          <h3>School</h3>
-          <table>
-            <tr><td><strong>Phone:</strong></td><td><a href="tel:0799999999">0799999999</a></td></tr>
-            <tr><td><strong>Email:</strong></td><td><a href="mailto:Email@domain.com">Email@domain.com</a></td></tr>
-            <tr><td><strong>URL:</strong></td><td><a href="https://www.madrasati.com">www.madrasati.com</a></td></tr>
-            <tr><td><strong>Location:</strong></td><td><a href="#">School Location 📍</a></td></tr>
-          </table>
+      <div class="filters">
+        <div>
+          <label for="year">Select the year</label><br />
+          <select id="year">
+            <option>Select</option>
+          </select>
         </div>
-
-        <div class="card admin">
-          <img src="https://img.icons8.com/ios/50/administrator-male.png" alt="Admin Icon">
-          <h3>Admin</h3>
-          <table>
-            <tr><td><strong>Phone:</strong></td><td><a href="tel:0799999999">0799999999</a></td></tr>
-            <tr><td><strong>Email:</strong></td><td><a href="mailto:Email@domain.com">Email@domain.com</a></td></tr>
-          </table>
+        <div>
+          <label for="semester">Select the Semester</label><br />
+          <select id="semester">
+            <option>Select</option>
+          </select>
         </div>
       </div>
-    </div>
 
-    <!-- ✅ Footer -->
+      <table>
+        <thead>
+          <tr>
+            <th>Subject Name</th>
+            <th>Semester 1</th>
+            <th>Semester 2</th>
+            <th>Year Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Arabic</td>
+            <td>80 / 100</td>
+            <td>90 / 100</td>
+            <td>85 / 100</td>
+          </tr>
+          <tr><td colspan="4">&nbsp;</td></tr>
+          <tr>
+            <td><strong>Total</strong></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <footer class="main-footer">
       <!-- Default to the left -->
       <strong>Copyright &copy; 2025 MADRASATI.</strong> All rights reserved.
     </footer>
   </div>
 
-  
+  <!-- Scripts -->
   <script src="../plugins/jquery/jquery.min.js"></script>
   <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../dist/js/adminlte.min.js"></script>
@@ -175,6 +184,6 @@
     type="module"
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
   ></script>
-  </div>
+
 </body>
 </html>

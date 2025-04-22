@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Profile</title>
+    <title>Grades</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link
@@ -17,7 +17,7 @@
     <!-- Custom contact style -->
     <link rel="stylesheet" href="../contact/contact_style.css" />
     <!--profile Style-->
-    <link rel="stylesheet" href="profil.css" />
+    <link rel="stylesheet" href="grades.css" />
   </head>
   <body class="hold-transition sidebar-mini">
     <div class="wrapper">
@@ -41,7 +41,7 @@
               ><i class="fas fa-bars"></i
             ></a>
           </li>
-          <li class="nav-item d-none d-sm-inline-block"></li>
+          <li class="nav-item d-none d-sm-inline-block">   <a href="contect.html" class="nav-link">Contact</a></li>
         </ul>
 
         <ul class="navbar-nav ml-auto">
@@ -125,65 +125,59 @@
           </nav>
         </div>
       </aside>
-
-      <!-- Content Wrapper -->
-      <div class="content-wrapper">
-        <div class="content-header">
-          <div class="container-fluid">
-            <div class="row mb-2">
-              <div class="col-sm-6">
-                <h2 class="m-0">👤 Profile</h2>
-              </div>
-            </div>
+      <!-- ✅ Grades Section -->
+      <section class="grades-section">
+        <h2>📈 Grades</h2>
+        <div class="filters">
+          <div>
+            <label for="year">Select the year</label><br>
+            <select id="year">
+              <option value="">Select</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+            </select>
+          </div>
+          <div>
+            <label for="semester">Select the Semester</label><br>
+            <select id="semester">
+              <option>Select</option>
+            </select>
           </div>
         </div>
-      
-        <section class="content">
-          <div class="container-fluid">
-            <!-- Buttons -->
-            <div class="upload-section">
-              <label for="bg-upload" class="upload-btn">Choose cover photo </label>
-              <input type="file" id="bg-upload" accept="image/*" hidden />
-              <button id="remove-bg-btn" class="remove-btn"> Delete cover photo</button>
-            </div>
-      
-            <!-- Profile Section -->
-            <div class="profile-header" id="profile-header">
-              <div class="avatar">SN</div>
-              <div class="profile-info">
-                <strong>Student Name</strong><br />
-                <small>student</small>
-              </div>
-            </div>
-      
-            <div class="info-grid">
-              <div class="info-card"><h3>🆔 National ID</h3><p>value</p></div>
-              <div class="info-card"><h3>🎂 Date of Birth</h3><p>value</p></div>
-              <div class="info-card"><h3>⚧ Gender</h3><p>value</p></div>
-              <div class="info-card"><h3>🏠 Address</h3><p>value</p></div>
-              <div class="info-card"><h3>🏫 Current Grade</h3><p>value</p></div>
-              <div class="info-card"><h3>👨‍👩‍👧 Parent Name</h3><p>value</p></div>
-            </div>
-          </div>
-        </section>
-      </div>
-      
 
-      <aside class="control-sidebar control-sidebar-dark">
-        <div class="p-3">
-          <h5>Title</h5>
-          <p>Sidebar content</p>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Subject</th>
+                <th>First Mark</th>
+                <th>Second Mark</th>
+                <th>Participation</th>
+                <th>Final Mark</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Math</td><td>15</td><td>18</td><td>5</td><td>32</td><td>70</td></tr>
+              <tr><td>Science</td><td>16</td><td>17</td><td>6</td><td>31</td><td>70</td></tr>
+              <tr><td>English</td><td>14</td><td>19</td><td>4</td><td>30</td><td>67</td></tr>
+              <tr><td>History</td><td>13</td><td>15</td><td>5</td><td>29</td><td>62</td></tr>
+              <tr><td>Geography</td><td>15</td><td>16</td><td>6</td><td>28</td><td>65</td></tr>
+              <tr><td>Arabic</td><td>17</td><td>18</td><td>5</td><td>30</td><td>70</td></tr>
+            </tbody>
+          </table>
         </div>
-      </aside>
+      </section>
 
-      <!-- Main Footer -->
+      <!-- ✅ Footer -->
       <footer class="main-footer">
         <!-- Default to the left -->
         <strong>Copyright &copy; 2025 MADRASATI.</strong> All rights reserved.
       </footer>
     </div>
 
-    <!-- Scripts -->
+    
     <script src="../plugins/jquery/jquery.min.js"></script>
     <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../dist/js/adminlte.min.js"></script>
@@ -191,5 +185,22 @@
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
-  </body>
+
+  
+  <script>
+    document.getElementById("year").addEventListener("change", function () {
+      const selectedYear = this.value;
+      if (selectedYear && parseInt(selectedYear) < 2025) {
+        window.location.href = "grades2.html";
+      }
+    });
+
+    function toggleSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      const body = document.body;
+      sidebar.classList.toggle('open');
+      body.classList.toggle('sidebar-open');
+    }
+  </script>
+</body>
 </html>
