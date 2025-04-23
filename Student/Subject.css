@@ -12,14 +12,12 @@
 
 /* Title Styling */
 .main-content h2 {
-  font-size: 2.4rem;
-  font-weight: bold;
+  font-size: 2.5rem;
   color: #1e3a8a;
-  margin-bottom: 1.5rem;
-  text-shadow: 1px 1px #dbeafe;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .main-content h2::before {
@@ -46,6 +44,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
+  margin-left: 20px;
 }
 
 .card:hover {
@@ -71,7 +70,7 @@
 .card:nth-child(1) { background: linear-gradient(135deg, #ff6b6b, #ff8787); color: white; }
 .card:nth-child(2) { background: linear-gradient(135deg, #1dd1a1, #48dbfb); color: white; }
 .card:nth-child(3) { background: linear-gradient(135deg, #54a0ff, #2e86de); color: white; }
-.card:nth-child(4) { background: linear-gradient(135deg, #feca57, #ffb142); color: white; }
+.card:nth-child(4) { background: linear-gradient(135deg, #feca57, #d8912e); color: white; }
 .card:nth-child(5) { background: linear-gradient(135deg, #5f27cd, #341f97); color: white; }
 .card:nth-child(6) { background: linear-gradient(135deg, #576574, #8395a7); color: white; }
 .card:nth-child(7) { background: linear-gradient(135deg, #ff9f43, #f368e0); color: white; }
@@ -86,8 +85,8 @@
 
   .main-content h2 {
     font-size: 1.8rem;
+    
   }
-
   .subjects-grid {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   }
