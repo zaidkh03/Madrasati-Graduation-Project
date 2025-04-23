@@ -13,6 +13,7 @@
   .main-header,
   .content-header {
     @extend .no-print;
+    margin-top: 50;
   }
 
   //This is the only element that should appear, so let's remove the margins

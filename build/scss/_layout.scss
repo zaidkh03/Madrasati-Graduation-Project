@@ -150,11 +150,11 @@ body,
     }
 
     .content-wrapper {
-      margin-top: $main-header-height;
+      margin-top: 50px;
     }
 
     .main-header.text-sm ~ .content-wrapper {
-      margin-top: $main-header-height-sm;
+      margin-top: 50px;
     }
 
     .main-header {
@@ -168,7 +168,7 @@ body,
 
   .layout-navbar-fixed.text-sm & {
     .content-wrapper {
-      margin-top: $main-header-height-sm;
+      margin-top: 50px;
     }
   }
 
@@ -179,7 +179,7 @@ body,
 
     .sidebar,
     .content-wrapper {
-      margin-top: 0;
+      margin-top: 50px;
     }
 
     .main-header {
@@ -279,12 +279,12 @@ body,
         }
 
         .content-wrapper {
-          margin-top: $main-header-height;
+          margin-top: 50px;
         }
 
         .text-sm & .main-header ~ .content-wrapper,
         .main-header.text-sm ~ .content-wrapper {
-          margin-top: $main-header-height-sm;
+          margin-top: 50px;
         }
 
         .main-header {
@@ -298,7 +298,7 @@ body,
 
       .layout#{$infix}-navbar-fixed.text-sm & {
         .content-wrapper {
-          margin-top: $main-header-height-sm;
+          margin-top:50px;
         }
       }
 
@@ -329,7 +329,7 @@ body,
 
         .sidebar,
         .content-wrapper {
-          margin-top: 0;
+          margin-top: 50px;
         }
 
         .main-header {

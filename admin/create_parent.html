@@ -6,30 +6,86 @@
     <title>AdminLTE 3 | Classes Page</title>
 
     <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
-    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+    />
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css" />
-    <!-- AdminLTE -->
+    <!-- daterange picker -->
+    <link
+      rel="stylesheet"
+      href="../plugins/daterangepicker/daterangepicker.css"
+    />
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link
+      rel="stylesheet"
+      href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css"
+    />
+    <!-- Bootstrap Color Picker -->
+    <link
+      rel="stylesheet"
+      href="../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css"
+    />
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link
+      rel="stylesheet"
+      href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css"
+    />
+    <!-- Select2 -->
+    <link
+      rel="stylesheet"
+      href="../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css"
+    />
+    <!-- Bootstrap4 Duallistbox -->
+    <link
+      rel="stylesheet"
+      href="../plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css"
+    />
+    <!-- BS Stepper -->
+    <link
+      rel="stylesheet"
+      href="../plugins/bs-stepper/css/bs-stepper.min.css"
+    />
+    <!-- dropzonejs -->
+    <link rel="stylesheet" href="../plugins/dropzone/min/dropzone.min.css" />
+    <!-- Theme style -->
     <link rel="stylesheet" href="../dist/css/adminlte.min.css" />
-    <!-- Custom form style -->
-    <link rel="stylesheet" href="../styles/form.css" />
     <!-- Ionicons -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
 
   <body class="hold-transition sidebar-mini">
     <div class="wrapper">
       <!-- Preloader -->
-      <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__shake" src="../loginstyls/logo3.png" alt="AdminLTELogo" height="60" width="60" />
+      <div
+        class="preloader flex-column justify-content-center align-items-center"
+      >
+        <img
+          class="animation__shake"
+          src="../loginstyls/logo3.png"
+          alt="AdminLTELogo"
+          height="60"
+          width="60"
+        />
       </div>
 
       <!-- Navbar -->
-      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <nav
+        class="main-header navbar navbar-expand navbar-white navbar-light fixed-top"
+      >
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"
+              ><i class="fas fa-bars"></i
+            ></a>
           </li>
           <li class="nav-item d-none d-sm-inline-block">
             <a href="contact_page.html" class="nav-link">Contact</a>
@@ -62,14 +118,23 @@
       <!-- Main Sidebar -->
       <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <a href="admin_dash.html" class="brand-link">
-          <img src="../styles/logo2.png" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: 0.8" />
+          <img
+            src="../styles/logo2.png"
+            alt="Logo"
+            class="brand-image img-circle elevation-3"
+            style="opacity: 0.8"
+          />
           <span class="brand-text font-weight-light">Madrasati</span>
         </a>
 
         <div class="sidebar">
           <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-              <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image" />
+              <img
+                src="../dist/img/user2-160x160.jpg"
+                class="img-circle elevation-2"
+                alt="User Image"
+              />
             </div>
             <div class="info">
               <a href="profile.html" class="d-block">Admin Name</a>
@@ -78,7 +143,12 @@
 
           <!-- Sidebar Menu -->
           <nav class="mt-2">
-            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <ul
+              class="nav nav-pills nav-sidebar flex-column"
+              data-widget="treeview"
+              role="menu"
+              data-accordion="false"
+            >
               <li class="nav-item">
                 <a href="dashboard_page.html" class="nav-link">
                   <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -93,7 +163,9 @@
               </li>
               <li class="nav-item">
                 <a href="teachers_page.html" class="nav-link">
-                  <i class="nav-icon"><ion-icon name="person-add"></ion-icon></i>
+                  <i class="nav-icon"
+                    ><ion-icon name="person-add"></ion-icon
+                  ></i>
                   <p>Teachers</p>
                 </a>
               </li>
@@ -128,11 +200,13 @@
             <div class="row mb-2">
               <div class="col-sm-6">
                 <h1 class="m-0">Create a parent</h1>
-                <hr>
+                <hr />
               </div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
-                  <li class="breadcrumb-item"><a href="dashboard_page.html">Home</a></li>
+                  <li class="breadcrumb-item">
+                    <a href="dashboard_page.html">Home</a>
+                  </li>
                 </ol>
               </div>
             </div>
@@ -141,67 +215,134 @@
 
         <!-- Main content -->
         <section class="content">
-          <form class="parent-form" role="form">
-            <div class="box-body">
-              <div class="form-group">
-                <label for="First-Name">First Name:</label>
-                <input type="text" class="form-control" id="First-Name" placeholder="Enter the First Name of the parent" required />
-              </div>
-              <div class="form-group">
-                <label for="Second-Name">Second Name:</label>
-                <input type="text" class="form-control" id="Second-Name" placeholder="Enter the Second Name of the parent" required />
-              </div>
-              <div class="form-group">
-                <label for="Third-Name">Third Name:</label>
-                <input type="text" class="form-control" id="Third-Name" placeholder="Enter the Third Name of the parent" required />
-              </div>
-              <div class="form-group">
-                <label for="Last-Name">Last Name:</label>
-                <input type="text" class="form-control" id="Last-Name" placeholder="Enter the Last Name of the parent" required />
-              </div>
-              <div class="form-group">
-                <label for="National-ID">National ID:</label>
-                <input type="text" class="form-control" id="National-ID" inputmode="numeric" pattern="[0-9]*" placeholder="Enter the National ID of the parent" required />
-              </div>
-              <div class="form-group">
-                <label for="Address">Address</label>
-                <input type="text" class="form-control" id="Address" placeholder="Enter the Address of the parent" required />
-              </div>
-              <div class="form-group">
-                <label for="Email">Email</label>
-                <input type="text" class="form-control" id="Email" placeholder="Enter the Address of the parent" required />
-              </div>
-              <div class="form-group">
-                <label for="Phone-number">Phone Number:</label>
-                <input type="number" class="form-control" id="Phone-number" maxlength="10" inputmode="numeric" pattern="[0-9]*" placeholder="Enter the number of the parent" required />
-              </div>
-              <div class="form-group">
-                <label for="gender">Gender:</label>
-                <select class="form-control" id="gender" name="gender" required>
-                  <option value="" disabled selected>Select your gender</option>
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                </select>
-              </div>
-            </div>
+          <div class="container-fluid">
+            <div class="col-md-8">
+              <div class="card card-primary">
+                <div class="card-header">
+                  <h3 class="card-title">Create a Parent</h3>
+                </div>
+                <div class="card-body p-0">
+                  <div class="bs-stepper linear">
+                    <div class="bs-stepper-content">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="Full-Name">Full Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="Full-Name"
+                            placeholder="Enter full name"
+                            required
+                          />
+                        </div>
 
-            <!-- /.box-body -->
-            <div class="box-footer">
-              <button type="reset" class="btn btn-default"><a href="parents_page.html" style="color: white;">Cancel</a></button>
-              <button type="submit" class="btn btn-primary"><a href="parents_page.html" style="color: white;">Submit</a></button>
+                        <div class="form-group">
+                          <label for="National-ID">National ID</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="National-ID"
+                            inputmode="numeric"
+                            pattern="[0-9]*"
+                            placeholder="Enter National ID"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="Phone-number">Phone Number</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="Phone-number"
+                          placeholder="Enter phone number"
+                          maxlength="10"
+                          pattern="[0-9]*"
+                          inputmode="numeric"
+                          required
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select class="form-control" id="gender" required>
+                          <option value="" disabled selected>
+                            Select gender
+                          </option>
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="Address">Address</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="Address"
+                          placeholder="Enter address"
+                          required
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="Email"
+                          placeholder="Enter email"
+                          required
+                        />
+                      </div>
+                      <a href="parents_page.html" class="btn btn-secondary"
+                        >Cancel</a
+                      >
+                      <button type="submit" class="btn btn-primary">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </form>
+          </div>
         </section>
-
-        <!-- Footer -->
-        <footer class="main-footer">
-          <strong>&copy; 2025 MADRASATI.</strong> All rights reserved.
-        </footer>
       </div>
 
-      <!-- Scripts -->
+      <!-- Footer -->
+      <footer class="main-footer">
+        <strong>&copy; 2025 MADRASATI.</strong> All rights reserved.
+      </footer>
+
+      <!-- jQuery -->
       <script src="../plugins/jquery/jquery.min.js"></script>
+      <!-- Bootstrap 4 -->
       <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Select2 -->
+      <script src="../plugins/select2/js/select2.full.min.js"></script>
+      <!-- Bootstrap4 Duallistbox -->
+      <script src="../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+      <!-- InputMask -->
+      <script src="../plugins/moment/moment.min.js"></script>
+      <script src="../plugins/inputmask/jquery.inputmask.min.js"></script>
+      <!-- date-range-picker -->
+      <script src="../plugins/daterangepicker/daterangepicker.js"></script>
+      <!-- bootstrap color picker -->
+      <script src="../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+      <!-- Tempusdominus Bootstrap 4 -->
+      <script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+      <!-- Bootstrap Switch -->
+      <script src="../plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+      <!-- BS-Stepper -->
+      <script src="../plugins/bs-stepper/js/bs-stepper.min.js"></script>
+      <!-- dropzonejs -->
+      <script src="../plugins/dropzone/min/dropzone.min.js"></script>
+      <!-- AdminLTE App -->
       <script src="../dist/js/adminlte.min.js"></script>
+      <!-- AdminLTE for demo purposes -->
+      <script src="../dist/js/demo.js"></script>
+    </div>
   </body>
 </html>

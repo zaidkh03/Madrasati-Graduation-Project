@@ -6,32 +6,86 @@
     <title>AdminLTE 3 | Classes Page</title>
 
     <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
-    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+    />
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css" />
-    <!-- AdminLTE -->
+    <!-- daterange picker -->
+    <link
+      rel="stylesheet"
+      href="../plugins/daterangepicker/daterangepicker.css"
+    />
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link
+      rel="stylesheet"
+      href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css"
+    />
+    <!-- Bootstrap Color Picker -->
+    <link
+      rel="stylesheet"
+      href="../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css"
+    />
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link
+      rel="stylesheet"
+      href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css"
+    />
+    <!-- Select2 -->
+    <link
+      rel="stylesheet"
+      href="../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css"
+    />
+    <!-- Bootstrap4 Duallistbox -->
+    <link
+      rel="stylesheet"
+      href="../plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css"
+    />
+    <!-- BS Stepper -->
+    <link
+      rel="stylesheet"
+      href="../plugins/bs-stepper/css/bs-stepper.min.css"
+    />
+    <!-- dropzonejs -->
+    <link rel="stylesheet" href="../plugins/dropzone/min/dropzone.min.css" />
+    <!-- Theme style -->
     <link rel="stylesheet" href="../dist/css/adminlte.min.css" />
-    <!-- Custom contact style -->
-    <link rel="stylesheet" href="../styles/form.css" />
     <!-- Ionicons -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-      
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
 
   <body class="hold-transition sidebar-mini">
     <div class="wrapper">
       <!-- Preloader -->
-      <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__shake" src="../loginstyls/logo3.png" alt="AdminLTELogo" height="60" width="60" />
+      <div
+        class="preloader flex-column justify-content-center align-items-center"
+      >
+        <img
+          class="animation__shake"
+          src="../loginstyls/logo3.png"
+          alt="AdminLTELogo"
+          height="60"
+          width="60"
+        />
       </div>
 
       <!-- Navbar -->
-      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <nav
+        class="main-header navbar navbar-expand navbar-white navbar-light fixed-top"
+      >
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"
+              ><i class="fas fa-bars"></i
+            ></a>
           </li>
           <li class="nav-item d-none d-sm-inline-block">
             <a href="admin_contact.html" class="nav-link">Contact</a>
@@ -64,14 +118,23 @@
       <!-- Main Sidebar -->
       <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <a href="admin_dash.html" class="brand-link">
-          <img src="../styles/logo2.png" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: 0.8" />
+          <img
+            src="../styles/logo2.png"
+            alt="Logo"
+            class="brand-image img-circle elevation-3"
+            style="opacity: 0.8"
+          />
           <span class="brand-text font-weight-light">Madrasati</span>
         </a>
 
         <div class="sidebar">
           <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-              <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image" />
+              <img
+                src="../dist/img/user2-160x160.jpg"
+                class="img-circle elevation-2"
+                alt="User Image"
+              />
             </div>
             <div class="info">
               <a href="profile.html" class="d-block">Admin Name</a>
@@ -80,7 +143,12 @@
 
           <!-- Sidebar Menu -->
           <nav class="mt-2">
-            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <ul
+              class="nav nav-pills nav-sidebar flex-column"
+              data-widget="treeview"
+              role="menu"
+              data-accordion="false"
+            >
               <li class="nav-item">
                 <a href="dashboard_page.html" class="nav-link">
                   <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -95,7 +163,9 @@
               </li>
               <li class="nav-item">
                 <a href="teachers_page.html" class="nav-link">
-                  <i class="nav-icon"><ion-icon name="person-add"></ion-icon></i>
+                  <i class="nav-icon"
+                    ><ion-icon name="person-add"></ion-icon
+                  ></i>
                   <p>Teachers</p>
                 </a>
               </li>
@@ -123,7 +193,7 @@
       </aside>
 
       <!-- Content Wrapper -->
-      <div class="content-wrapper">
+      <div class="content-wrapper" style="padding-top: 50px">
         <div class="content-header">
           <div class="container-fluid">
             <div class="row mb-2">
@@ -133,7 +203,9 @@
               </div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
-                  <li class="breadcrumb-item"><a href="admin_dash.html">Home</a></li>
+                  <li class="breadcrumb-item">
+                    <a href="admin_dash.html">Home</a>
+                  </li>
                 </ol>
               </div>
             </div>
@@ -142,38 +214,84 @@
 
         <!-- Form Section -->
         <section class="content">
-          <form role="form">
-            <div class="box-body">
-              <div class="form-group">
-                <label for="Name">Name </label>
-                <input type="text" class="form-control" id="Name" placeholder="Enter the name of the class" required />
-              </div>
-              <div class="form-group">
-                <label for="Year">Year</label>
-                <input type="number" class="form-control" id="Year" maxlength="4" placeholder="Enter the current year" required />
-              </div>
-              <div class="form-group">
-                <label for="Capacity">Capacity</label>
-                <input type="number" class="form-control" id="Capacity" inputmode="numeric" pattern="[0-9]*" placeholder="Enter the capacity of the class" required />
-              </div>
-              <div class="form-group">
-                <label for="Section">Section</label>
-                <input type="text" class="form-control" id="Section" placeholder="Enter the section of the class" required />
-              </div>
-              <div class="form-group">
-                <label for="Mentor-teacher">Mentor teacher</label>
-                <input type="text" class="form-control" id="Mentor-teacher" placeholder="Enter the mentor teacher of the class" required />
+          <div class="container-fluid">
+            <div class="col-md-12">
+              <div class="card card-default">
+                <div class="card-header">
+                  <h3 class="card-title">Create a Class</h3>
+                </div>
+                <div class="card-body p-0">
+                  <div class="bs-stepper linear">
+                    <div class="bs-stepper-content">
+                      <div class="form-group">
+                        <label for="Name">Class Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="Name"
+                          placeholder="Enter the name of the class"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="Year">Year</label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="Year"
+                          maxlength="4"
+                          placeholder="Enter the current year"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="Capacity">Capacity</label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="Capacity"
+                          inputmode="numeric"
+                          pattern="[0-9]*"
+                          placeholder="Enter the capacity of the class"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="Section">Section</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="Section"
+                          placeholder="Enter the section of the class"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="Mentor-teacher">Mentor Teacher</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="Mentor-teacher"
+                          placeholder="Enter the mentor teacher of the class"
+                          required
+                        />
+                      </div>
+
+                      <button type="reset" class="btn btn-primary">
+                        <a href="parents_page.html" style="color: white"
+                          >Cancel</a
+                        >
+                      </button>
+                      <button type="submit" class="btn btn-primary">
+                        <a href="assign_class_members.html" style="color: white"
+                          >Submit</a
+                        >
+                      </button>
+                    </div>
+                  </div>
               </div>
             </div>
-            <div class="box-footer">
-              <button type="submit" class="btn" style="background-color: gray;">
-                <a href="classes_page.html" style="color: white;">Cancel</a>
-              </button>
-              <button type="submit" class="btn btn-primary">
-                <a href="assign_class_members.html" style="color: white;">Submit</a>
-              </button>
-            </div>
-          </form>
+          </div>
         </section>
       </div>
 
@@ -183,9 +301,32 @@
       </footer>
     </div>
 
-    <!-- Scripts -->
+    <!-- jQuery -->
     <script src="../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
     <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Select2 -->
+    <script src="../plugins/select2/js/select2.full.min.js"></script>
+    <!-- Bootstrap4 Duallistbox -->
+    <script src="../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+    <!-- InputMask -->
+    <script src="../plugins/moment/moment.min.js"></script>
+    <script src="../plugins/inputmask/jquery.inputmask.min.js"></script>
+    <!-- date-range-picker -->
+    <script src="../plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap color picker -->
+    <script src="../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Bootstrap Switch -->
+    <script src="../plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+    <!-- BS-Stepper -->
+    <script src="../plugins/bs-stepper/js/bs-stepper.min.js"></script>
+    <!-- dropzonejs -->
+    <script src="../plugins/dropzone/min/dropzone.min.js"></script>
+    <!-- AdminLTE App -->
     <script src="../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../dist/js/demo.js"></script>
   </body>
 </html>
