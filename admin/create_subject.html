@@ -3,33 +3,87 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AdminLTE 3 | Classes Page</title>
+    <title>AdminLTE 3 | Create Subject</title>
 
     <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css" />
-    <!-- AdminLTE -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="../plugins/fontawesome-free/css/all.min.css"
+    />
+    <!-- daterange picker -->
+    <link
+      rel="stylesheet"
+      href="../plugins/daterangepicker/daterangepicker.css"
+    />
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link
+      rel="stylesheet"
+      href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css"
+    />
+    <!-- Bootstrap Color Picker -->
+    <link
+      rel="stylesheet"
+      href="../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css"
+    />
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link
+      rel="stylesheet"
+      href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css"
+    />
+    <!-- Select2 -->
+    <link rel="stylesheet" href="../plugins/select2/css/select2.min.css" />
+    <link
+      rel="stylesheet"
+      href="../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css"
+    />
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet"href="../plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css"/>
+    <!-- BS Stepper -->
+    <link rel="stylesheet" href="../plugins/bs-stepper/css/bs-stepper.min.css"/>
+    <!-- dropzonejs -->
+    <link rel="stylesheet" href="../plugins/dropzone/min/dropzone.min.css" />
+    <!-- Theme style -->
     <link rel="stylesheet" href="../dist/css/adminlte.min.css" />
-    <!-- Custom contact style -->
-    <link rel="stylesheet" href="../contact/contact_style.css" />
     <!-- Ionicons -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
 
   <body class="hold-transition sidebar-mini">
     <div class="wrapper">
       <!-- Preloader -->
-      <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__shake" src="../loginstyls/logo3.png" alt="AdminLTELogo" height="60" width="60" />
+      <div
+        class="preloader flex-column justify-content-center align-items-center"
+      >
+        <img
+          class="animation__shake"
+          src="../loginstyls/logo3.png"
+          alt="AdminLTELogo"
+          height="60"
+          width="60"
+        />
       </div>
 
       <!-- Navbar -->
-      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <nav
+        class="main-header navbar navbar-expand navbar-white navbar-light fixed-top"
+      >
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"
+              ><i class="fas fa-bars"></i
+            ></a>
           </li>
           <li class="nav-item d-none d-sm-inline-block">
             <a href="contact_page.html" class="nav-link">Contact</a>
@@ -46,7 +100,7 @@
               <span class="dropdown-header">15 Notifications</span>
               <div class="dropdown-divider"></div>
               <a href="#" class="dropdown-item">
-                <i class="fas fa-envelope mr-2"></i> new messages
+                <i class="fas fa-envelope mr-2"></i> New messages
               </a>
             </div>
           </li>
@@ -57,19 +111,27 @@
           </li>
         </ul>
       </nav>
-      <!-- /.navbar -->
 
       <!-- Main Sidebar -->
       <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <a href="admin_dash.html" class="brand-link">
-          <img src="../styles/logo2.png" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: 0.8" />
+          <img
+            src="../styles/logo2.png"
+            alt="Logo"
+            class="brand-image img-circle elevation-3"
+            style="opacity: 0.8"
+          />
           <span class="brand-text font-weight-light">Madrasati</span>
         </a>
 
         <div class="sidebar">
           <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-              <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image" />
+              <img
+                src="../dist/img/user2-160x160.jpg"
+                class="img-circle elevation-2"
+                alt="User Image"
+              />
             </div>
             <div class="info">
               <a href="profile.html" class="d-block">Admin Name</a>
@@ -78,42 +140,49 @@
 
           <!-- Sidebar Menu -->
           <nav class="mt-2">
-            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <ul
+              class="nav nav-pills nav-sidebar flex-column"
+              data-widget="treeview"
+              role="menu"
+              data-accordion="false"
+            >
               <li class="nav-item">
-                <a href="dashboard_page.html" class="nav-link">
-                  <i class="nav-icon fas fa-tachometer-alt"></i>
-                  <p>Dashboard</p>
-                </a>
+                <a href="dashboard_page.html" class="nav-link"
+                  ><i class="nav-icon fas fa-tachometer-alt"></i>
+                  <p>Dashboard</p></a
+                >
               </li>
               <li class="nav-item">
-                <a href="classes_page.html" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>Classes</p>
-                </a>
+                <a href="classes_page.html" class="nav-link"
+                  ><i class="nav-icon fas fa-th"></i>
+                  <p>Classes</p></a
+                >
               </li>
               <li class="nav-item">
-                <a href="teachers_page.html" class="nav-link">
-                  <i class="nav-icon"><ion-icon name="person-add"></ion-icon></i>
-                  <p>Teachers</p>
-                </a>
+                <a href="teachers_page.html" class="nav-link"
+                  ><i class="nav-icon"
+                    ><ion-icon name="person-add"></ion-icon
+                  ></i>
+                  <p>Teachers</p></a
+                >
               </li>
               <li class="nav-item">
-                <a href="subjects_page.html" class="nav-link">
-                  <i class="nav-icon"><ion-icon name="library"></ion-icon></i>
-                  <p>Subjects</p>
-                </a>
+                <a href="subjects_page.html" class="nav-link"
+                  ><i class="nav-icon"><ion-icon name="library"></ion-icon></i>
+                  <p>Subjects</p></a
+                >
               </li>
               <li class="nav-item">
-                <a href="parents_page.html" class="nav-link">
-                  <i class="nav-icon"><ion-icon name="people"></ion-icon></i>
-                  <p>Parents</p>
-                </a>
+                <a href="parents_page.html" class="nav-link"
+                  ><i class="nav-icon"><ion-icon name="people"></ion-icon></i>
+                  <p>Parents</p></a
+                >
               </li>
               <li class="nav-item">
-                <a href="students_page.html" class="nav-link">
-                  <i class="nav-icon"><ion-icon name="id-card"></ion-icon></i>
-                  <p>Students</p>
-                </a>
+                <a href="students_page.html" class="nav-link"
+                  ><i class="nav-icon"><ion-icon name="id-card"></ion-icon></i>
+                  <p>Students</p></a
+                >
               </li>
             </ul>
           </nav>
@@ -123,84 +192,99 @@
       <!-- Content Wrapper -->
       <div class="content-wrapper">
         <!-- Content Header -->
-        
-
-        <aside class="control-sidebar control-sidebar-dark">
-            <div class="p-3">
-              <h5>Title</h5>
-              <p>Sidebar content</p>
-            </div>
-          </aside>
-
-          <div class="content-wrapper">
-            <!-- Content Header -->
-
-            <div class="content-header">
-              <div class="container-fluid">
-                <div class="row mb-2">
-                  <div class="col-sm-6">
-                    <h1 class="m-0">Create a Subject</h1>
-                    <hr>
-                  </div>
-                  <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                      <li class="breadcrumb-item"><a href="dashboard_page.html">Home</a></li>
-                    </ol>
-                  </div>
-                </div>
+        <div class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6">
+                <h1 class="m-0">Create a Subject</h1>
+                <hr />
+              </div>
+              <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                  <li class="breadcrumb-item">
+                    <a href="dashboard_page.html">Home</a>
+                  </li>
+                </ol>
               </div>
             </div>
-
-            <div class="content-wrapper">
-
-                <div class="content-header">
-                    <div class="container-fluid">
-                      <div class="row mb-2">
-                        <div class="col-sm-6">
-                  <h3 class="m-0">Student info</h3>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
 
+        <!-- Main content -->
+        <section class="content">
+          <div class="container-fluid">
+            <div class="col-12">
+              <div class="card card-default" style="margin-top: 100px;">
+                <div class="card-header">
+                  <h3 class="card-title">Create a Subject</h3>
+                </div>
 
-                <!-- /.box-header -->
-                <!-- form start -->
-                <Section class="content">
+                <div class="card-body p-0">
+                  <div class="bs-stepper linear">
+                    <div class="bs-stepper-content">
+                      <div class="form-group">
+                        <label for="Subject-Name">Subject Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="Subject-Name"
+                          placeholder="Enter the Name of the Subject"
+                          required
+                        />
+                      </div>
+                      
 
-                <form role="form">
-                  <div class="box-body">
-                    <div class="form-group">
-                      <label for="Subject-Name">Subject Name: </label>
-                      <input type="text" class="form-control" id="Subject-Name" placeholder="Enter the Name of the Subject" required />
+                      <button type="reset" class="btn btn-primary">
+                        <a href="parents_page.html" style="color: white"
+                          >Cancel</a
+                        >
+                      </button>
+                      <button type="submit" class="btn btn-primary">
+                        <a href="subjects_page.html" style="color: white"
+                          >Submit</a
+                        >
+                      </button>
                     </div>
                   </div>
-                  <!-- /.box-body -->
-    
-                  <div class="box-footer">
-                    <button type="submit" class="btn" style="background-color: gray; "><a href="subjects_page.html" style="color: white;">Cancle</a></button>
-                    <button type="submit" class="btn btn-primary"><a href="subjects_page.html" style="color: white;">Submit</a></button>
-
-                  </div>
-                  
-                </form>
+                </div>
               </div>
+            </div>
           </div>
-          </section>
-    
-          <!-- Footer -->
-          <footer class="main-footer">
-            <strong>&copy; 2025 MADRASATI.</strong> All rights reserved.
-          </footer>
-        </div>
-    
-        <!-- Scripts -->
-        <script src="../plugins/jquery/jquery.min.js"></script>
-        <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="../dist/js/adminlte.min.js"></script>
-    
-        <!-- Search Filter Script -->
-        
-        
-      </body>
-    </html>
+        </section>
+      </div>
+
+      
+      <!-- Footer -->
+      <footer class="main-footer" style="margin-bottom: 0%;">
+        <strong>&copy; 2025 MADRASATI.</strong> All rights reserved.
+      </footer>
+      </div>
+       <!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Select2 -->
+<script src="../plugins/select2/js/select2.full.min.js"></script>
+<!-- Bootstrap4 Duallistbox -->
+<script src="../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+<!-- InputMask -->
+<script src="../plugins/moment/moment.min.js"></script>
+<script src="../plugins/inputmask/jquery.inputmask.min.js"></script>
+<!-- date-range-picker -->
+<script src="../plugins/daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap color picker -->
+<script src="../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Bootstrap Switch -->
+<script src="../plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+<!-- BS-Stepper -->
+<script src="../plugins/bs-stepper/js/bs-stepper.min.js"></script>
+<!-- dropzonejs -->
+<script src="../plugins/dropzone/min/dropzone.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
+  </body>
+</html>

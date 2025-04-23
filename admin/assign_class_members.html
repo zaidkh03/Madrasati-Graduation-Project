@@ -13,10 +13,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css" />
     <!-- DataTables -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"
-    />
+     <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
     <!-- AdminLTE -->
     <link rel="stylesheet" href="../dist/css/adminlte.min.css" />
     <!-- Ionicons -->
@@ -160,7 +159,7 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1 class="m-0">Assign Students and Teachers to Class</h1>
+                <h5 class="m-0">Assign Students and Teachers to Class</h5>
               </div>
             </div>
           </div>
@@ -173,6 +172,20 @@
             <div class="card mb-4">
               <div class="card-header"><strong>Students</strong></div>
               <div class="card-body">
+                <div class="col-sm-12 col-md-6 mb-3">
+                  <div id="example1_filter" class="dataTables_filter">
+                    <label>
+                      Search:
+                      <input
+                        type="search"
+                        id="classSearchInput"
+                        class="form-control form-control-sm"
+                        placeholder="Search for classes..."
+                        aria-controls="example1"
+                      />
+                    </label>
+                  </div>
+                </div>
                 <table
                   id="studentsTable"
                   class="table table-bordered table-striped"
@@ -231,11 +244,25 @@
             <div class="card mb-4">
               <div class="card-header"><strong>Teachers</strong></div>
               <div class="card-body">
+                <div class="col-sm-12 col-md-6 mb-3">
+                  <div id="example1_filter" class="dataTables_filter">
+                    <label>
+                      Search:
+                      <input
+                        type="search"
+                        id="classSearchInput"
+                        class="form-control form-control-sm"
+                        placeholder="Search for teachers"
+                        aria-controls="example1"
+                      />
+                    </label>
+                  </div>
+                </div>
                 <table
                   id="teachersTable"
                   class="table table-bordered table-striped"
                 >
-                  <thead>
+                  <thead style="background-color: #343a40; color: white">
                     <tr>
                       <th>Select</th>
                       <th>ID</th>
@@ -307,25 +334,17 @@
     <script src="../plugins/jquery/jquery.min.js"></script>
     <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../dist/js/adminlte.min.js"></script>
-    <script src="../https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
     <script>
-      $(function () {
-        $("#studentsTable").DataTable({
-          paging: false,
-          info: false,
-          lengthChange: false,
-          ordering: false,
-          searching: true,
-        });
-
-        $("#teachersTable").DataTable({
-          paging: false,
-          info: false,
-          lengthChange: false,
-          ordering: false,
-          searching: true,
+      $("#classSearchInput").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $("#example1 tbody tr").filter(function () {
+          // نبحث فقط في العمود الثاني (الاسم)
+          var className = $(this).find("td:nth-child(2)").text().toLowerCase();
+          $(this).toggle(className.indexOf(value) > -1);
         });
       });
+
 
       function submitForm() {
         const selectedStudents = [];
