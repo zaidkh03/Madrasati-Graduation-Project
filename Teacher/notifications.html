@@ -5,21 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>AdminLTE 3 | Classes Page</title>
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
-    />
-    <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css" />
-    <link rel="stylesheet" href="../dist/css/adminlte.min.css" />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    
+    <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Bootstrap Color Picker -->
+  <link rel="stylesheet" href="../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+  <!-- Bootstrap4 Duallistbox -->
+  <link rel="stylesheet" href="../plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+  <!-- BS Stepper -->
+  <link rel="stylesheet" href="../plugins/bs-stepper/css/bs-stepper.min.css">
+  <!-- dropzonejs -->
+  <link rel="stylesheet" href="../plugins/dropzone/min/dropzone.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </head>
 
   <body class="hold-transition sidebar-mini">
@@ -153,24 +163,34 @@
 
                     <div class="row mb-2">
                       <div class="col text-right">
-                        <button class="btn btn-primary" id="saveGradesBtn">
-                          Send Notification
+                        <a href="text_content.html"><button class="btn btn-primary" id="saveGradesBtn">
+                          Send To Student
                           <span style="display: inline-block; vertical-align: middle; margin-left: 6px;">
                             <ion-icon name="send" style="font-size: 18px"></ion-icon>
                           </span>
-                        </button>
+                        </button></a>
+                        <a href="text_content.html"><button class="btn btn-primary" id="saveGradesBtn">
+                          Send To Parent
+                          <span style="display: inline-block; vertical-align: middle; margin-left: 6px;">
+                            <ion-icon name="send" style="font-size: 18px"></ion-icon>
+                          </span>
+                        </button></a>
+                        <a href="text_content.html"><button class="btn btn-primary" id="saveGradesBtn">
+                          Send To All
+                          <span style="display: inline-block; vertical-align: middle; margin-left: 6px;">
+                            <ion-icon name="send" style="font-size: 18px"></ion-icon>
+                          </span>
+                        </button></a>
                       </div>
                     </div>
 
                     <table id="example1" class="table table-bordered table-striped">
                       <thead style="background-color: #343a40; color: white">
                         <tr>
-                          <th class="text-center"><input type="checkbox" id="selectAll" /></th>
+                          <th class="text-center" style="width: 50px;"><input type="checkbox" id="selectAll" /></th>
                           <th>Student Name</th>
                           <th>Parent Name</th>
-                          <th>Title</th>
-                          <th>Text</th>
-                          <th>Send To</th>
+                          
                         </tr>
                       </thead>
                       <tbody>
@@ -178,70 +198,16 @@
                           <td class="text-center"><input type="checkbox" class="row-checkbox" /></td>
                           <td contenteditable="true" style="font-size: 12px">A123</td>
                           <td contenteditable="true" style="font-size: 12px">Ahmed</td>
-                          <td>
-                            <select class="form-control form-control-sm">
-                              <option value="">Select</option>
-                              <option>Homework Reminder</option>
-                              <option>Behavior Notice</option>
-                              <option>Meeting</option>
-                              <option>Absence Alert</option>
-                            </select>
-                          </td>
-                          <td contenteditable="true" style="font-size: 16px"></td>
-                          <td class="text-center">
-                            <select class="form-control form-control-sm send-to-select">
-                              <option value="">Select</option>
-                              <option value="all">All</option>
-                              <option value="parent">Parent</option>
-                              <option value="student">Student</option>
-                            </select>
-                          </td>
                         </tr>
                         <tr data-class="ggg">
                           <td class="text-center"><input type="checkbox" class="row-checkbox" /></td>
                           <td contenteditable="true" style="font-size: 12px">B456</td>
                           <td contenteditable="true" style="font-size: 12px">Sara</td>
-                          <td>
-                            <select class="form-control form-control-sm">
-                              <option value="">Select</option>
-                              <option>Homework Reminder</option>
-                              <option>Behavior Notice</option>
-                              <option>Meeting</option>
-                              <option>Absence Alert</option>
-                            </select>
-                          </td>
-                          <td contenteditable="true" style="font-size: 16px"></td>
-                          <td class="text-center">
-                            <select class="form-control form-control-sm send-to-select">
-                              <option value="">Select</option>
-                              <option value="all">All</option>
-                              <option value="parent">Parent</option>
-                              <option value="student">Student</option>
-                            </select>
-                          </td>
                         </tr>
                         <tr data-class="nin">
                           <td class="text-center"><input type="checkbox" class="row-checkbox" /></td>
                           <td contenteditable="true" style="font-size: 12px">C789</td>
                           <td contenteditable="true" style="font-size: 12px">Omar</td>
-                          <td>
-                            <select class="form-control form-control-sm">
-                              <option value="">Select</option>
-                              <option>Homework Reminder</option>
-                              <option>Behavior Notice</option>
-                              <option>Meeting</option>
-                              <option>Absence Alert</option>
-                            </select>
-                          </td>
-                          <td contenteditable="true" style="font-size: 16px"></td>
-                          <td class="text-center">
-                            <select class="form-control form-control-sm send-to-select">
-                              <option value="">Select</option>
-                              <option value="all">All</option>
-                              <option value="parent">Parent</option>
-                              <option value="student">Student</option>
-                            </select>
-                          </td>
                         </tr>
                       </tbody>
                     </table>
@@ -265,9 +231,33 @@
       </footer>
     </div>
 
-    <script src="../plugins/jquery/jquery.min.js"></script>
-    <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../dist/js/adminlte.min.js"></script>
+      <!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Select2 -->
+<script src="../plugins/select2/js/select2.full.min.js"></script>
+<!-- Bootstrap4 Duallistbox -->
+<script src="../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+<!-- InputMask -->
+<script src="../plugins/moment/moment.min.js"></script>
+<script src="../plugins/inputmask/jquery.inputmask.min.js"></script>
+<!-- date-range-picker -->
+<script src="../plugins/daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap color picker -->
+<script src="../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Bootstrap Switch -->
+<script src="../plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+<!-- BS-Stepper -->
+<script src="../plugins/bs-stepper/js/bs-stepper.min.js"></script>
+<!-- dropzonejs -->
+<script src="../plugins/dropzone/min/dropzone.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
 
     <script>
       document.getElementById("saveGradesBtn").addEventListener("click", function () {
